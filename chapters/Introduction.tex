@@ -1,0 +1,14 @@
+\chapter{Introduction}
+\label{ch:introduction}
+
+In modern systems programming, memory safety has emerged as a crucial element for building reliable and secure software. As applications grow in complexity and scale, traditional memory management techniques—predominantly used in languages like C and C++—often expose developers to risks such as use-after-free errors, dangling pointers, and buffer overflows. These vulnerabilities not only compromise program stability but can also lead to severe security breaches.
+
+In contrast, Rust has introduced a paradigm shift with its ownership model, which enforces strict memory safety guarantees at compile time without sacrificing performance. This model eliminates many of the pitfalls inherent in manual memory management, thus offering a safer alternative for systems programming while still meeting high-performance requirements. Both C++ and Rust embrace the RAII (Resource Acquisition Is Initialization) principle, yet they diverge significantly in how they enforce safety—Rust through compile-time checks and C++ through more flexible, yet potentially hazardous, runtime mechanisms. This paper addresses the following research question:
+
+\begin{quote}
+    To what extent can Rust become more prevalent in systems programming by offering safer memory management and enhanced developer experience without sacrificing performance, and what are the associated benefits and challenges compared to C++?
+\end{quote}
+
+To answer this question, we first explore the fundamental importance of memory safety and the common challenges faced in systems programming. We then compare the traditional memory management approach of C++ with Rust’s ownership-based model, highlighting both the benefits and limitations of each. Finally, we assess how these approaches impact not only runtime performance but also the overall developer experience.
+
+By bridging theory and practice, this paper aims to provide a comprehensive evaluation of memory safety in contemporary systems programming, offering insights into how emerging language designs can better reconcile the demands of safety, efficiency, and usability.

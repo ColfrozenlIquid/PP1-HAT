@@ -1,0 +1,1 @@
+{"rule":"EN_UNPAIRED_BRACKETS","sentence":"^\\QParticipants in the study expressed strong support for Rust's safety features, noting high confidence in its memory safety (90\\E$"}

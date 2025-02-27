@@ -5,7 +5,7 @@
 
 \documentclass[openright,titlepage,numbers=noenddot,headinclude,%twoside, %1headlines,
                 footinclude=true,cleardoublepage=empty,abstract=false,
-                BCOR=5mm,paper=a4,fontsize=11pt,
+                BCOR=5mm,paper=a4,fontsize=11pt,twocolumn
                 ngerman,american,%lockflag
                 ]{scrreprt}
 
@@ -21,7 +21,7 @@
 \begin{document}
 \frenchspacing
 \raggedbottom
-\selectlanguage{ngerman} % ngerman, american
+\selectlanguage{american} % ngerman, american
 %\renewcommand*{\bibname}{new name}
 %\setbibpreamble{}
 \pagenumbering{roman}
@@ -35,28 +35,33 @@
 \cleardoublepage\include{frontbackmatter/Declaration}
 \condLOCK{\cleardoublepage\include{frontbackmatter/BlockingNotice}}
 \cleardoublepage\include{frontbackmatter/AbstractEN}
-\cleardoublepage\include{frontbackmatter/AbstractDE}
+% \cleardoublepage\include{frontbackmatter/AbstractDE}
 %\cleardoublepage\include{frontbackmatter/Publications}
 %\cleardoublepage\include{frontbackmatter/Acknowledgments}
 \cleardoublepage\include{frontbackmatter/Contents}
-\cleardoublepage\include{frontbackmatter/Figures}
-\cleardoublepage\include{frontbackmatter/Tables}
-\cleardoublepage\include{frontbackmatter/Listings}
-\cleardoublepage\include{frontbackmatter/Acronyms}
+% \cleardoublepage\include{frontbackmatter/Figures}
+% \cleardoublepage\include{frontbackmatter/Tables}
+% \cleardoublepage\include{frontbackmatter/Listings}
+% \cleardoublepage\include{frontbackmatter/Acronyms}
 
 % Mainmatter
 \cleardoublepage
 \pagestyle{scrheadings}
 \pagenumbering{arabic}
-% Alwas use \cleardoublepage before \part{...}
 \cleardoublepage
-\part{Thesis}\label{pt:thesis}
+% \part{Thesis}\label{pt:thesis}
+% \part{Thesis}
+\cleardoublepage\include{chapters/Introduction}
+\cleardoublepage\include{chapters/Background}
+\cleardoublepage\include{chapters/Development}
+\cleardoublepage\include{chapters/Performance}
+\cleardoublepage\include{chapters/Real_World}
 
 % Backmatter
 \appendix
 %\renewcommand{\thechapter}{\alph{chapter}}
 \cleardoublepage
-\part{Appendix}
+% \part{Appendix}
 
 \cleardoublepage\include{frontbackmatter/Bibliography}
 \end{document}

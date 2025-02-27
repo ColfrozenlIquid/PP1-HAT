@@ -1,0 +1,18 @@
+\chapter{Performance}
+
+In systems programming, performance is a key metric for evaluating software efficiency, making the choice of programming language especially important. Rust promises zero-cost abstractions and performance comparable to C++, while also offering memory safety and fearless concurrency. To examine these claims, we developed separate tests for individual language features and measured their execution times.
+
+\section{Comparing Code Performance in Rust vs C++}
+
+In systems programming, performance is a key metric for evaluating software efficiency, making the choice of programming language especially important. Rust promises zero-cost abstractions and performance comparable to C++, while also offering memory safety and fearless concurrency. To examine these claims, we developed separate tests for individual language features and measured their execution times.
+
+We implemented dedicated tests using Google’s Benchmark \cite[]{GoogleBenchmark2025} library for C++ and Criterion.rs \cite[]{heislerBheislerCriterionrs2025} for Rust. Specifically, we designed distinct tests for various features, including sorting (using each language’s standard sort function), closures (using Rust’s closures and the equivalent C++ lambda functions), memory allocation and management, and iterator operations. Each test was executed individually in comparable environments to evaluate the performance of each feature. We show our findings in Figure~\ref{fig:table1}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/table_1.png}
+    \caption{Descriptive caption explaining the figure.}
+    \label{fig:table1}
+\end{figure}
+
+The results indicate that Rust and C++ deliver nearly identical execution times for each test, demonstrating that both Rust’s zero-cost abstractions and C++’s zero-overhead design compile to highly optimized code.
