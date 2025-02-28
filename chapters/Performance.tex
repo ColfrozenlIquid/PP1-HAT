@@ -6,24 +6,37 @@ In systems programming, performance is a key metric for evaluating software effi
 
 In systems programming, performance is a key metric for evaluating software efficiency, making the choice of programming language especially important. Rust promises zero-cost abstractions and performance comparable to C++, while also offering memory safety and fearless concurrency. To examine these claims, we developed separate tests for individual language features and measured their execution times.
 
-We implemented dedicated tests using Google’s Benchmark \cite[]{GoogleBenchmark2025} library for C++ and Criterion.rs \cite[]{heislerBheislerCriterionrs2025} for Rust. Specifically, we designed distinct tests for various features, including sorting (using each language’s standard sort function), closures (using Rust’s closures and the equivalent C++ lambda functions), memory allocation and management, and iterator operations. Each test was executed individually in comparable environments to evaluate the performance of each feature. We show our findings in Figure~\ref{fig:table1}.
+We implemented dedicated tests using Google’s Benchmark \cite[]{GoogleBenchmark2025} library for C++ and Criterion.rs \cite[]{heislerBheislerCriterionrs2025} for Rust. Specifically, we designed distinct tests for various features, including sorting (using each language’s standard sort function), closures (using Rust’s closures and the equivalent C++ lambda functions), memory allocation and management, and iterator operations. Each test was executed individually in comparable environments to evaluate the performance of each feature. We show our findings in Table~\ref{tab:comp}.
 
-\begin{figure}[htbp]
+\begin{table}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/table_1.png}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & \multicolumn{2}{|c|}{Average Runtime (ns)} \\  
+        \hline
+        Test & Rust & C++ \\
+        \hline
+        Sorting & 238.56 & 241 \\
+        Closure/ Lambda & 26.39 & 29.2 \\
+        Memory & 26.85 & 27.2 \\
+        Iterators & 26.31 & 29.2\\
+        \hline
+    \end{tabular}
     \caption{Comparison of Execution speed of similar Rust and C++ feature implementations}
-    \label{fig:table1}
-\end{figure}
+    \label{tab:comp}
+\end{table}
 
 The results indicate that Rust and C++ deliver nearly identical execution times for each test, demonstrating that both Rust’s zero-cost abstractions and C++’s zero-overhead design compile to highly optimized code.
 
 \paragraph{}
 
-According to the study "Rewrite it in Rust: A Computational Physics Case Study"\cite{veytsmanRewriteItRust2024}, Veytsman et al.\ implement a physics simulation in Rust and C++ to analyze the performance difference between both implementations. The Rust implementation was based off of the C++ code, but made use of Rust's modules, closures and iterators. Their results when comparing both sequential implementations runtime, found that their Rust implementation (4.098s) was 1.6x as fast as their C++ implementation (7.521s). The study also included a parallelized implementation using Rust's Rayon library \cite[]{RayonrsRayon2025}. This resulted in a runtime performance gain of around 5.6x when comparing C++(487.63s) and Rust (146.939s). This however is an unfair comparison as C++ has various parallelization libraries that could have been used. It does however show that parallel Rust can be written easily and safely \cite{veytsmanRewriteItRust2024}.
+According to the study "Rewrite it in Rust: A Computational Physics Case Study"\cite{veytsmanRewriteItRust2024}, Veytsman et al.\ implemented a physics simulation in both Rust and C++ to compare their performance. The Rust implementation was adapted from the C++ version but leveraged Rust’s features such as modules, closures, and iterators. When comparing the runtime of the sequential implementations, the Rust version (4.098s) was 1.6× faster than its C++ counterpart (7.521s).
+
+The study also included a parallelized implementation using Rust’s Rayon library \cite[]{RayonrsRayon2025}, which significantly improved performance. The parallel Rust implementation achieved a runtime of 146.939s, compared to 487.63s for C++, yielding a 5.6× speedup. However, this comparison may be somewhat unfair, as C++ offers multiple parallelization libraries that were not utilized in this study. Nevertheless, the results highlight the ease and safety of parallel programming in Rust \cite{veytsmanRewriteItRust2024}.
 
 \paragraph{}
 
-Analyzing a study by J. Rotter and M. C. Lewis on comparing Rust to other languages in an N-Body benchmark. The benchmarks revealed that Rust and C++ had comparable performance, with Rust beating out C++ at higher particle count.
+Another study by J. Rotter and M. C. Lewis \cite[]{rotterNBodyPerformanceKDTree2022} examined Rust’s performance in an N-body simulation benchmark, comparing it against C++ and C. Their results showed that Rust and C++ exhibited similar performance, with Rust outperforming C++ at higher particle counts as seen in Table~\ref{tab:performance_1}.
 
 \begin{table}[h]
     \centering
@@ -42,7 +55,7 @@ Analyzing a study by J. Rotter and M. C. Lewis on comparing Rust to other langua
     \label{tab:performance_1}
 \end{table}
 
-Furthermore, the study analyzed the memory usage of the benchmark across the language. The findings showed that Rust used consistently less memory than C++ across all particle counts, coming very close to native C.
+In addition to performance, the study also analyzed memory usage. The findings revealed that Rust consistently consumed less memory than C++ at all particle counts, closely matching the efficiency of C as seen in Table~\ref{tab:performance_2}.
 
 \begin{table}[h]
     \centering
@@ -60,3 +73,5 @@ Furthermore, the study analyzed the memory usage of the benchmark across the lan
     \caption{Resident Memory Usage in MB Between Rust, C++ and C according to Table 2 in \cite[]{rotterNBodyPerformanceKDTree2022} (lower is better)}
     \label{tab:performance_2}
 \end{table}
+
+These studies suggest that Rust is a strong competitor to C++ in high-performance computing. Rust consistently achieves performance comparable to C++, occasionally surpassing it, while also demonstrating efficient memory usage \cite[]{rotterNBodyPerformanceKDTree2022}.
