@@ -104,6 +104,35 @@
   file = {C:\Users\Daniel\Zotero\storage\VZPZ9TRV\raii.html}
 }
 
+@software{RayonrsRayon2025,
+  title = {Rayon-Rs/Rayon},
+  date = {2025-02-28T08:58:23Z},
+  origdate = {2014-10-02T15:38:05Z},
+  url = {https://github.com/rayon-rs/rayon},
+  urldate = {2025-02-28},
+  abstract = {Rayon: A data parallelism library for Rust},
+  organization = {rayon-rs}
+}
+
+@inproceedings{rotterNBodyPerformanceKDTree2022,
+  title = {N-{{Body Performance With}} a {{kD-Tree}}: {{Comparing Rust}} to {{Other Languages}}},
+  shorttitle = {N-{{Body Performance With}} a {{kD-Tree}}},
+  booktitle = {2022 {{International Conference}} on {{Computational Science}} and {{Computational Intelligence}} ({{CSCI}})},
+  author = {Rotter, Jonathan and Lewis, Mark C.},
+  date = {2022-12},
+  pages = {457--462},
+  publisher = {IEEE},
+  location = {Las Vegas, NV, USA},
+  doi = {10.1109/CSCI58124.2022.00088},
+  url = {https://ieeexplore.ieee.org/document/10216574/},
+  urldate = {2025-02-28},
+  abstract = {This paper presents the results of a more representative N-body benchmark utilizing a kD-tree implemented in multiple languages. We find that while Rust is slightly slower than C or C++ for smaller simulations, it is the fastest language for simulations at the scale we use in actual research. On the other hand, Go is constantly 1.5-2x slower than Rust. The JVM is competitive with Go for intermediate-size simulations but struggles when we reach one million particles. As expected, scripting languages are the slowest, though it is rather remarkable how much slower Python is than Node.js. Also surprising is that our attempts to speed up the Python implementation using NumPy made it significantly slower.},
+  eventtitle = {2022 {{International Conference}} on {{Computational Science}} and {{Computational Intelligence}} ({{CSCI}})},
+  isbn = {979-8-3503-2028-2},
+  langid = {english},
+  file = {C:\Users\Daniel\Zotero\storage\XT4VGDTL\Rotter and Lewis - 2022 - N-Body Performance With a kD-Tree Comparing Rust to Other Languages.pdf}
+}
+
 @book{RustBook,
   title = {The {{Rust Book}}},
   url = {https://doc.rust-lang.org/book/}
@@ -115,4 +144,22 @@
   urldate = {2025-02-20},
   langid = {english},
   file = {C:\Users\Daniel\Zotero\storage\N2Z6ESA6\technology.html}
+}
+
+@online{veytsmanRewriteItRust2024,
+  title = {Rewrite It in {{Rust}}: {{A Computational Physics Case Study}}},
+  shorttitle = {Rewrite It in {{Rust}}},
+  author = {Veytsman, Willow and Zhai, Shuang and Ding, Chen and Sefkow, Adam B.},
+  date = {2024-10-24},
+  eprint = {2410.19146},
+  eprinttype = {arXiv},
+  eprintclass = {physics},
+  doi = {10.48550/arXiv.2410.19146},
+  url = {http://arxiv.org/abs/2410.19146},
+  urldate = {2025-02-28},
+  abstract = {Surveys of computational science show that many scientists use languages like C and C++ in order to write code for scientific computing, especially in scenarios where performance is a key factor. In this paper, we seek to evaluate the use of Rust in such a scenario, through implementations of a physics simulation in both C++ and Rust. We also create a parallel version of our Rust code, in order to further explore performance as well as parallel code complexity. Measuring performance as program runtime, we find that Rust can offer better performance than C++, with some test cases showing as much as a 5.6\texttimes{} performance increase, and that parallel code in Rust can further improve performance while being easy to write safely. Finally, we provide some preliminary profiling to better understand the difference between the way our implementations perform.},
+  langid = {english},
+  pubstate = {prepublished},
+  keywords = {Physics - Computational Physics},
+  file = {C:\Users\Daniel\Zotero\storage\B8MHE8D7\Veytsman et al. - 2024 - Rewrite it in Rust A Computational Physics Case Study.pdf}
 }
