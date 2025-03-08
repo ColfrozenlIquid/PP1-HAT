@@ -1,5 +1,18 @@
 \chapter{Real World Adoption \& Use-Cases}
+\label{chap:real_world}
 
 In recent years, the adoption of Rust has grown substantially within large-scale software projects and technology companies. This trend is evident both in the complete rewriting of existing infrastructures originally implemented in languages such as C++ and in the development of new components in Rust that interoperate with legacy C++ codebases. Notably, C++—along with its predecessor, C—has served as an industry stalwart since the 1990s. This paper aims to examine the modern adoption of Rust and evaluate its effectiveness as a replacement for C++ in contemporary software development.
 
 Microsoft exemplifies a leading proponent of this shift. As one of the organizations with the largest codebases in C and C++ globally \cite[]{2022ReviewAdoption}, Microsoft initiated a significant transition in 2020 by rewriting its implementation of DWriteCore. This effort has yielded a hybrid codebase consisting of 152,000 lines of Rust and 96,000 lines of C++ code. Additionally, the Windows Win32 GDI is currently being ported to Rust, with 36,000 lines of Rust code integrated so far \cite[]{claburnMicrosoftRewritingCore}.
+
+\paragraph{}
+
+A community fork of the Linux kernel, known as Rust for Linux (RFL), was created in 2020 with the goal of leveraging Rust's memory safety features to reduce bugs in kernel driver development. The first Rust-based drivers were introduced in Linux kernel version 6.8 \cite[]{EmpiricalStudyRustforLinux2024}.
+
+In 1992, the possibility of incorporating C++ into the Linux kernel was briefly considered but ultimately rejected, with Linus Torvalds expressing strong opinions against both the C++ language and its compiler \cite[]{LinusTorvalds}.
+
+A study by H. Li et al. \cite[]{EmpiricalStudyRustforLinux2024} analyzed the progress of RFL, focusing on security aspects, particularly bug mitigation and the use of unsafe Rust. The authors argue that Rust’s safety mechanisms help developers fix existing kernel bugs while significantly reducing the likelihood of introducing new memory-related issues. This, in turn, reduces the cognitive load required to ensure kernel safety.
+
+They acknowledge that while the use of unsafe Rust is unavoidable, vulnerabilities are not. Additionally, Rust's strict ownership rules necessitate the use of unsafe Rust in some cases to streamline review cycles. However, they also highlight that some bugs become more obscure, requiring expertise in both Rust and kernel development to debug effectively. For example, a use-after-free bug in C may transform into a mapping bug in Rust, which is not detected by the Rust compiler.
+
+Finally, their study found that Rust’s safety features lead to a significant increase in binary size, though performance remains comparable to C implementations in some cases \cite[]{EmpiricalStudyRustforLinux2024}.

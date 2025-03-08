@@ -1,8 +1,9 @@
 \chapter{Performance}
+\label{chap:performance}
 
 In systems programming, performance is a key metric for evaluating software efficiency, making the choice of programming language especially important. Rust promises zero-cost abstractions and performance comparable to C++, while also offering memory safety and fearless concurrency. To examine these claims, we developed separate tests for individual language features and measured their execution times.
 
-\section{Comparing Code Performance in Rust vs C++}
+\section{Benchmarking Implementations in Rust vs C++}
 
 In systems programming, performance is a key metric for evaluating software efficiency, making the choice of programming language especially important. Rust promises zero-cost abstractions and performance comparable to C++, while also offering memory safety and fearless concurrency. To examine these claims, we developed separate tests for individual language features and measured their execution times.
 
@@ -18,8 +19,8 @@ We implemented dedicated tests using Google’s Benchmark \cite[]{GoogleBenchmar
         \hline
         Sorting & 238.56 & 241 \\
         Closure/ Lambda & 26.39 & 29.2 \\
-        Memory & 26.85 & 27.2 \\
-        Iterators & 26.31 & 29.2\\
+        Memory Management & 26.85 & 27.2 \\
+        Iterators & 26.31 & 29.2 \\
         \hline
     \end{tabular}
     \caption{Comparison of Execution speed of similar Rust and C++ feature implementations}
@@ -28,7 +29,7 @@ We implemented dedicated tests using Google’s Benchmark \cite[]{GoogleBenchmar
 
 The results in Table~\ref{tab:comp_1} indicate that Rust and C++ deliver nearly identical execution times for each test, demonstrating that both Rust’s zero-cost abstractions and C++’s zero-overhead design compile to highly optimized code.
 
-Furthermore, we evaluated more realistic workloads to compare C++ and Rust. Using GPT-4o, we generated JSON parsing code for both languages to process HTTP requests and JSON files. Our findings are presented in Table~\ref{tab:comp_2}.
+Furthermore, we evaluated more realistic workloads to compare C++ and Rust. Using GPT-4o, we generated parsing code for both languages to process HTTP requests. Our findings are presented in Table~\ref{tab:comp_2}.
 
 \begin{table}[H]
     \centering
@@ -48,8 +49,7 @@ Furthermore, we evaluated more realistic workloads to compare C++ and Rust. Usin
 
 As shown in Table~\ref{tab:comp_2}, Rust (454.44 ns) outperforms C++ (1828 ns) in the initial HTTP request parsing implementation by a factor of 4×. However, after generating a more optimized implementation that leverages lower-level optimizations, C++ (231 ns) outperforms Rust (375.79 ns) by a factor of 1.6×. However, when comparing the LOC, both implementations have similar counts, yet Rust's initial implementation, with fewer lines of code, is more performant than C++'s. C++ only gains an advantage after applying lower-level optimizations, which result in over twice the LOC in both implementations. This demonstrates that, in this example, Rust provides high-level abstractions that yield efficient performance, whereas C++ requires more intricate low-level implementations to achieve superior speed.
 
-
-\paragraph{}
+\section{Rust vs. C++: Performance and Memory Usage}
 
 According to the study "Rewrite it in Rust: A Computational Physics Case Study"\cite{veytsmanRewriteItRust2024}, Veytsman et al.\ implemented a physics simulation in both Rust and C++ to compare their performance. The Rust implementation was adapted from the C++ version but leveraged Rust’s features such as modules, closures, and iterators. When comparing the runtime of the sequential implementations, the Rust version (4.098s) was 1.6× faster than its C++ counterpart (7.521s).
 
@@ -96,3 +96,7 @@ In addition to performance, the study also analyzed memory usage. The findings r
 \end{table}
 
 These studies suggest that Rust is a strong competitor to C++ in high-performance computing. Rust consistently achieves performance comparable to C++, occasionally surpassing it, while also demonstrating efficient memory usage \cite[]{rotterNBodyPerformanceKDTree2022}.
+
+\paragraph{}
+
+This demonstrates that Rust and C++ exhibit highly comparable performance metrics, with each language occasionally outperforming the other. Rust's memory safety features and borrow checker introduce minimal overhead in terms of performance and memory usage. Additionally, Rust's implementations are comparable to C++ in terms of lines of code (LOC), as evidenced by our example implementation in \cite[]{sColfrozenlIquidBenchmark2025}, which achieves better performance in the optimized version and slightly lower performance in the unoptimized version. Overall, Rust's performance closely aligns with that of C++, and its safety mechanisms do not impose a significant performance penalty while providing strong memory safety and ownership guarantees. However, as discussed in Chapter~\ref{chap:development}, the greater challenge lies in the user experience when building code, rather than in the language's raw performance.
