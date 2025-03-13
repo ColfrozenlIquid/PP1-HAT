@@ -1,3 +1,5 @@
 RAII
 mutexes
 enjoyability
+Stroustrup
+Bjarne
