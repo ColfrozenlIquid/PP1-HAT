@@ -15,16 +15,24 @@ The study by K. R. Fulton and A. Chan \cite[]{fultonBenefitsDrawbacksAdopting} a
 
 An analysis of the 2024 State of Rust survey reveals key challenges faced by programmers when using or adopting Rust. Among respondents who do not use Rust, the most common reason cited—excluding those who indicated they simply "haven't gotten around to it" (70.5\%)—was the difficulty or time required to learn the language. Specifically, 30.6\% of respondents reported that Rust is either "too difficult to learn" or "takes too much time to learn," a figure that remains within the margin of error compared to the 2023 survey results \cite[]{2024StateRust}. These findings align with prior research by Fulton and Chan, who examined the benefits and drawbacks of adopting Rust and similarly identified learning difficulty as a key barrier to adoption \cite[]{fultonBenefitsDrawbacksAdopting}.
 
-\section{Adoption Trends}
-According to the 2024 State of Rust survey \cite[]{2024StateRust}, 63.7\% of respondents indicated that they no longer use Rust but would like to in the future if the opportunity arises. Meanwhile, 36.0\% of respondents cited external factors, such as changing goals and requirements in their professional use of Rust, as the reason for no longer using it. This marks a decrease from 45.7\% in 2023, possibly indicating that Rust is becoming more integrated into professional development settings.
-
-This trend is further supported by the continuous increase in daily or near-daily Rust usage, which grew from 47.3\% in 2022 to 49.3\% in 2023 and 53.4\% in 2024. Similarly, the percentage of participants who claim proficiency in writing production-ready Rust code has risen from 42.3\% in 2022 to 47.0\% in 2023, reaching 53.5\% in 2024. This suggests a growing number of proficient Rust developers producing usable code.
-
-The proportion of developers using Rust for the majority of their coding tasks has increased from 29.8\% in 2022 to 33.9a\% in 2023 and 38.2\% in 2024, indicating a rising adoption of Rust in professional settings. This is further reinforced by the increase in organizations making non-trivial use of Rust, from 35.4\% in 2022 to 38.7\% in 2023 and 45.5\% in 2024 \cite[]{2024StateRust}.
-
 \section{Development Tooling, Libraries and Ecosystem}
 Rust's development tooling and ecosystem are viewed positively by respondents. In the study by K. R. Fulton et al., 75\% of participants rated Rust's tooling as good or very good compared to other tooling they had used. Additionally, 92\% of respondents described Rust's compiler and runtime error messages as good or very good relative to their reference points, with 97\% finding these messages helpful in resolving issues. Furthermore, 83\% of participants praised Rust's crate ecosystem. However, 55\% of respondents criticized the speed of the Rust compiler. Rust also lacks the extensive, mature library portfolio of C++, leading 39\% of participants to express concerns about the limited availability of libraries, while 34\% criticized the dependency bloat caused by Cargo \cite[]{fultonBenefitsDrawbacksAdopting}.
 
 \paragraph{}
 
 In his article on transitioning a C++ codebase to Rust \cite[]{gaultierHowRewriteCodebase}, P. Gaultier summarizes his team's experience converting a production system. He contends that writing tests in Rust is considerably simpler than in C++, which led to an increase in test coverage. Additionally, he highlights his team's high satisfaction with Rust's tooling and editor support. Finally, Gaultier expresses interest in replacing CMake with Cargo, criticizing CMake as both slow and overly complex \cite[]{gaultierHowRewriteCodebase}.
+
+\section{Adoption Trends}
+According to the 2024 State of Rust survey \cite[]{2024StateRust}, 63.7\% of respondents indicated that they no longer use Rust but would like to in the future if the opportunity arises. Meanwhile, 36.0\% of respondents cited external factors, such as changing goals and requirements in their professional use of Rust, as the reason for no longer using it. This marks a decrease from 45.7\% in 2023, possibly indicating that Rust is becoming more integrated into professional development settings.
+
+This trend is further supported by the continuous increase in daily or near-daily Rust usage, which grew from 47.3\% in 2022 to 49.3\% in 2023 and 53.4\% in 2024. Similarly, the percentage of participants who claim proficiency in writing production-ready Rust code has risen from 42.3\% in 2022 to 47.0\% in 2023, reaching 53.5\% in 2024. This suggests a growing number of proficient Rust developers producing usable code.
+
+The proportion of developers using Rust for the majority of their coding tasks has increased from 29.8\% in 2022 to 33.9\% in 2023 and 38.2\% in 2024, indicating a rising adoption of Rust in professional settings. This is further reinforced by the increase in organizations making non-trivial use of Rust, from 35.4\% in 2022 to 38.7\% in 2023 and 45.5\% in 2024 \cite[]{2024StateRust}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/grouped_bar_chart.pdf}
+    \caption{Adoption Trends and Proficiency in Rust according to 2024 State of Rust Survey \cite[]{2024StateRust}.}
+    \label{fig:bargraph}
+\end{figure}
+

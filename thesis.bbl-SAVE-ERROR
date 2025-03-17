@@ -1,0 +1,840 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{dhurjatiMemorySafetyRuntime}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=341d54ea9d6c1c2d26506fcc27280959}{%
+           family={Dhurjati},
+           familyi={D\bibinitperiod},
+           given={Dinakar},
+           giveni={D\bibinitperiod}}}%
+        {{hash=01ef314c5960d69a80a501e636be107c}{%
+           family={Kowshik},
+           familyi={K\bibinitperiod},
+           given={Sumant},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1bbfd49b96c18edb5a0c84c94c3fa6c4}{%
+           family={Adve},
+           familyi={A\bibinitperiod},
+           given={Vikram},
+           giveni={V\bibinitperiod}}}%
+        {{hash=082d304bf1444853e07be11590d172a2}{%
+           family={Lattner},
+           familyi={L\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{5b462e8e45ecfa063dd7144b882d091b}
+      \strng{fullhash}{d4163e5c8514b90fab3d97d4d0f1d64c}
+      \strng{fullhashraw}{d4163e5c8514b90fab3d97d4d0f1d64c}
+      \strng{bibnamehash}{d4163e5c8514b90fab3d97d4d0f1d64c}
+      \strng{authorbibnamehash}{d4163e5c8514b90fab3d97d4d0f1d64c}
+      \strng{authornamehash}{5b462e8e45ecfa063dd7144b882d091b}
+      \strng{authorfullhash}{d4163e5c8514b90fab3d97d4d0f1d64c}
+      \strng{authorfullhashraw}{d4163e5c8514b90fab3d97d4d0f1d64c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Traditional approaches to enforcing memory safety of programs rely heavily on runtime checks of memory accesses and on garbage collection, both of which are unattractive for embedded applications. The long-term goal of our work is to enable 100\% static enforcement of memory safety for embedded programs through advanced compiler techniques and minimal semantic restrictions on programs. The key result of this paper is a compiler technique that ensures memory safety of dynamically allocated memory without programmer annotations, runtime checks, or garbage collection, and works for a large subclass of type-safe C programs. The technique is based on a fully automatic pool allocation (i.e., region-inference) algorithm for C programs we developed previously, and it ensures safety of dynamically allocated memory while retaining explicit deallocation of individual objects within regions (to avoid garbage collection). For a diverse set of embedded C programs (and using a previous technique to avoid null pointer checks), we show that we are able to statically ensure the safety of pointer and dynamic memory usage in all these programs. We also describe some improvements over our previous work in static checking of array accesses. Overall, we achieve 100\% static enforcement of memory safety without new language syntax for a significant subclass of embedded C programs, and the subclass is much broader if array bounds checks are ignored.}
+      \field{langid}{english}
+      \field{title}{Memory {{Safety Without Runtime Checks}} or {{Garbage Collection}}}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\KV9BQKNP\Dhurjati et al. - Memory Safety Without Runtime Checks or Garbage Collection.pdf
+      \endverb
+    \endentry
+    \entry{bauerPrinciplesSecurityTrust2018}{book}{}{}
+      \name{editor}{2}{}{%
+        {{hash=0fddc2a59cf81f3ad0ba2cfde598ee2a}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={Lujo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b7d2dedb64572e046a0efa6112d19545}{%
+           family={Küsters},
+           familyi={K\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{009b7454ac090d73f8959309cea03041}
+      \strng{fullhash}{009b7454ac090d73f8959309cea03041}
+      \strng{fullhashraw}{009b7454ac090d73f8959309cea03041}
+      \strng{bibnamehash}{009b7454ac090d73f8959309cea03041}
+      \strng{editorbibnamehash}{009b7454ac090d73f8959309cea03041}
+      \strng{editornamehash}{009b7454ac090d73f8959309cea03041}
+      \strng{editorfullhash}{009b7454ac090d73f8959309cea03041}
+      \strng{editorfullhashraw}{009b7454ac090d73f8959309cea03041}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-319-89721-9 978-3-319-89722-6}
+      \field{langid}{english}
+      \field{series}{Lecture {{Notes}} in {{Computer Science}}}
+      \field{title}{Principles of {{Security}} and {{Trust}}}
+      \field{urlday}{30}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{volume}{10804}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-3-319-89722-6
+      \endverb
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\IIJRN23N\Bauer and Küsters - 2018 - Principles of Security and Trust.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-319-89722-6
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-319-89722-6
+      \endverb
+    \endentry
+    \entry{RustBook}{book}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{The {{Rust Book}}}
+      \verb{urlraw}
+      \verb https://doc.rust-lang.org/book/
+      \endverb
+      \verb{url}
+      \verb https://doc.rust-lang.org/book/
+      \endverb
+    \endentry
+    \entry{RAIICppreferencecom}{online}{}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{title}{{{RAII}} - Cppreference.Com}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\VZPZ9TRV\raii.html
+      \endverb
+      \verb{urlraw}
+      \verb https://en.cppreference.com/w/cpp/language/raii
+      \endverb
+      \verb{url}
+      \verb https://en.cppreference.com/w/cpp/language/raii
+      \endverb
+    \endentry
+    \entry{theofficeofthewhitehouseBackBuildingBlocks2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=02cf51a2d0d1b25390888f8d4b2c4db2}{%
+           family={White\bibnamedelima House},
+           familyi={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={The\bibnamedelima Office},
+           giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod},
+           prefix={of\bibnamedelima the},
+           prefixi={o\bibinitperiod\bibinitdelim t\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {The Office of the White House}%
+      }
+      \strng{namehash}{02cf51a2d0d1b25390888f8d4b2c4db2}
+      \strng{fullhash}{02cf51a2d0d1b25390888f8d4b2c4db2}
+      \strng{fullhashraw}{02cf51a2d0d1b25390888f8d4b2c4db2}
+      \strng{bibnamehash}{02cf51a2d0d1b25390888f8d4b2c4db2}
+      \strng{authorbibnamehash}{02cf51a2d0d1b25390888f8d4b2c4db2}
+      \strng{authornamehash}{02cf51a2d0d1b25390888f8d4b2c4db2}
+      \strng{authorfullhash}{02cf51a2d0d1b25390888f8d4b2c4db2}
+      \strng{authorfullhashraw}{02cf51a2d0d1b25390888f8d4b2c4db2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{English: President Biden's National Cybersecurity Strategy outlines two fundamental shifts: the need to both rebalance the responsibility to defend cyberspace and realign incentives to favor long-term cybersecurity investments. In this report, the case is made that the technical community is well-positioned to drive progress on both strategic goals. First, in order to reduce memory safety vulnerabilities at scale, creators of software and hardware can better secure the building blocks of cyberspace. This report focuses on the programming language as a primary building block, and explores hardware architecture and formal methods as complementary approaches to achieve similar outcomes. Second, in order to establish accurate cybersecurity quality metrics, advances can be made to address the hard and complex research problem of software measurability. This report explores how such metrics can shift market forces to improve cybersecurity quality across the ecosystem.}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{title}{Back to the {{Building Blocks}} - {{A Path Toward Secure}} and {{Measurable Software}}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/02/Final-ONCD-Technical-Report.pdf
+      \endverb
+      \verb{url}
+      \verb https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/02/Final-ONCD-Technical-Report.pdf
+      \endverb
+    \endentry
+    \entry{sutterSafetyContext2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d1fc2b577689be883fe16f8ef59ed0c4}{%
+           family={Sutter},
+           familyi={S\bibinitperiod},
+           given={Herb},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Sutter's Mill}%
+      }
+      \strng{namehash}{d1fc2b577689be883fe16f8ef59ed0c4}
+      \strng{fullhash}{d1fc2b577689be883fe16f8ef59ed0c4}
+      \strng{fullhashraw}{d1fc2b577689be883fe16f8ef59ed0c4}
+      \strng{bibnamehash}{d1fc2b577689be883fe16f8ef59ed0c4}
+      \strng{authorbibnamehash}{d1fc2b577689be883fe16f8ef59ed0c4}
+      \strng{authornamehash}{d1fc2b577689be883fe16f8ef59ed0c4}
+      \strng{authorfullhash}{d1fc2b577689be883fe16f8ef59ed0c4}
+      \strng{authorfullhashraw}{d1fc2b577689be883fe16f8ef59ed0c4}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Scope. To talk about C++'s current safety problems and solutions well, I need to include the context of the broad landscape of security and safety threats facing all software. I chair the ISO C++ s\dots}
+      \field{day}{12}
+      \field{hour}{6}
+      \field{langid}{english}
+      \field{minute}{1}
+      \field{month}{3}
+      \field{second}{13}
+      \field{timezone}{Z}
+      \field{title}{C++ Safety, in Context}
+      \field{urlday}{4}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\UM2QEBVC\safety-in-context.html
+      \endverb
+      \verb{urlraw}
+      \verb https://herbsutter.com/2024/03/11/safety-in-context/
+      \endverb
+      \verb{url}
+      \verb https://herbsutter.com/2024/03/11/safety-in-context/
+      \endverb
+    \endentry
+    \entry{WhatScienceCan}{online}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{What Science Can Tell Us about {{C}} and {{C}}++'s Security {$\cdot$} {{Alex Gaynor}}}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\NPYQSLWA\science-on-memory-unsafety-and-security.html
+      \endverb
+      \verb{urlraw}
+      \verb https://alexgaynor.net/2020/may/27/science-on-memory-unsafety-and-security/
+      \endverb
+      \verb{url}
+      \verb https://alexgaynor.net/2020/may/27/science-on-memory-unsafety-and-security/
+      \endverb
+    \endentry
+    \entry{stroustrupDesignAlternativesTypeandResource}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=4975813514faee20fb6fcdb39a08af6f}{%
+           family={Stroustrup},
+           familyi={S\bibinitperiod},
+           given={Bjarne},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8f8d8a84fe40070219d5d2faa644f214}{%
+           family={Reis},
+           familyi={R\bibinitperiod},
+           given={Gabriel\bibnamedelima Dos},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a6bc152bab8739b610198fcaa431bd9}
+      \strng{fullhash}{5a6bc152bab8739b610198fcaa431bd9}
+      \strng{fullhashraw}{5a6bc152bab8739b610198fcaa431bd9}
+      \strng{bibnamehash}{5a6bc152bab8739b610198fcaa431bd9}
+      \strng{authorbibnamehash}{5a6bc152bab8739b610198fcaa431bd9}
+      \strng{authornamehash}{5a6bc152bab8739b610198fcaa431bd9}
+      \strng{authorfullhash}{5a6bc152bab8739b610198fcaa431bd9}
+      \strng{authorfullhashraw}{5a6bc152bab8739b610198fcaa431bd9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We discuss a set of alternatives for achieving type-and-resource safe programming in the context of C++. After discussing alternatives, we propose a set of minor additions to ISO C++ to ease static analysis to provide guarantees for code obeying a variety of coding rules.}
+      \field{langid}{english}
+      \field{title}{Design {{Alternatives}} for {{Type-and-Resource Safe C}}++}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\HGAH9BN6\Stroustrup and Reis - Design Alternatives for Type-and-Resource Safe C++.pdf
+      \endverb
+    \endentry
+    \entry{stroustrupFrameworkProfilesDevelopment}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=4975813514faee20fb6fcdb39a08af6f}{%
+           family={Stroustrup},
+           familyi={S\bibinitperiod},
+           given={Bjarne},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{4975813514faee20fb6fcdb39a08af6f}
+      \strng{fullhash}{4975813514faee20fb6fcdb39a08af6f}
+      \strng{fullhashraw}{4975813514faee20fb6fcdb39a08af6f}
+      \strng{bibnamehash}{4975813514faee20fb6fcdb39a08af6f}
+      \strng{authorbibnamehash}{4975813514faee20fb6fcdb39a08af6f}
+      \strng{authornamehash}{4975813514faee20fb6fcdb39a08af6f}
+      \strng{authorfullhash}{4975813514faee20fb6fcdb39a08af6f}
+      \strng{authorfullhashraw}{4975813514faee20fb6fcdb39a08af6f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Framework for {{Profiles}} Development}
+      \field{urlday}{11}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\A6ZHFCIY\p3274r0.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3274r0.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/p3274r0.pdf
+      \endverb
+    \endentry
+    \entry{Technology2024Stack}{online}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Technology |{} 2024 {{Stack Overflow Developer Survey}}}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\N2Z6ESA6\technology.html
+      \endverb
+      \verb{urlraw}
+      \verb https://survey.stackoverflow.co/2024/technology/
+      \endverb
+      \verb{url}
+      \verb https://survey.stackoverflow.co/2024/technology/
+      \endverb
+    \endentry
+    \entry{fultonBenefitsDrawbacksAdopting}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5cb55a4c1811c7eab08a77d16750ee86}{%
+           family={Fulton},
+           familyi={F\bibinitperiod},
+           given={Kelsey\bibnamedelima R},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=bf30de40f0a6542beb682dd405c99917}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{603ecdd2b67fb5dc8b1d48faed1bbcbf}
+      \strng{fullhash}{603ecdd2b67fb5dc8b1d48faed1bbcbf}
+      \strng{fullhashraw}{603ecdd2b67fb5dc8b1d48faed1bbcbf}
+      \strng{bibnamehash}{603ecdd2b67fb5dc8b1d48faed1bbcbf}
+      \strng{authorbibnamehash}{603ecdd2b67fb5dc8b1d48faed1bbcbf}
+      \strng{authornamehash}{603ecdd2b67fb5dc8b1d48faed1bbcbf}
+      \strng{authorfullhash}{603ecdd2b67fb5dc8b1d48faed1bbcbf}
+      \strng{authorfullhashraw}{603ecdd2b67fb5dc8b1d48faed1bbcbf}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Programming languages such as Rust and Go were developed to combat common and potentially devastating memorysafety-related vulnerabilities. But adoption of new, more secure languages can be fraught and complex. To better understand the benefits and challenges of adopting Rust in particular, we conducted semi-structured interviews with professional, primarily senior software developers who have worked with Rust on their teams or tried to introduce it (n = 16), and we deployed a survey to the Rust development community (n = 178). We asked participants about their personal experiences using Rust, as well as experiences using Rust at their companies. We find a range of positive features, including good tooling and documentation, benefits for the development lifecycle, and improvement of overall secure coding skills, as well as drawbacks including a steep learning curve, limited library support, and concerns about the ability to hire additional Rust developers in the future. Our results have implications for promoting the adoption of Rust specifically and secure programming languages and tools more generally.}
+      \field{langid}{english}
+      \field{title}{Benefits and {{Drawbacks}} of {{Adopting}} a {{Secure Programming Language}}: {{Rust}} as a {{Case Study}}}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\68QHV8RZ\Fulton and Chan - Benefits and Drawbacks of Adopting a Secure Programming Language Rust as a Case Study.pdf
+      \endverb
+    \endentry
+    \entry{2024StateRust}{online}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Empowering everyone to build reliable and efficient software.}
+      \field{langid}{english}
+      \field{title}{2024 {{State}} of {{Rust Survey Results}} |{} {{Rust Blog}}}
+      \field{urlday}{26}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\E45FE4UE\2024-State-Of-Rust-Survey-results.html
+      \endverb
+      \verb{urlraw}
+      \verb https://blog.rust-lang.org/2025/02/13/2024-State-Of-Rust-Survey-results.html
+      \endverb
+      \verb{url}
+      \verb https://blog.rust-lang.org/2025/02/13/2024-State-Of-Rust-Survey-results.html
+      \endverb
+    \endentry
+    \entry{gaultierHowRewriteCodebase}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c3420ea28f91e513e50cb7492a3757f1}{%
+           family={Gaultier},
+           familyi={G\bibinitperiod},
+           given={Phillipe},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c3420ea28f91e513e50cb7492a3757f1}
+      \strng{fullhash}{c3420ea28f91e513e50cb7492a3757f1}
+      \strng{fullhashraw}{c3420ea28f91e513e50cb7492a3757f1}
+      \strng{bibnamehash}{c3420ea28f91e513e50cb7492a3757f1}
+      \strng{authorbibnamehash}{c3420ea28f91e513e50cb7492a3757f1}
+      \strng{authornamehash}{c3420ea28f91e513e50cb7492a3757f1}
+      \strng{authorfullhash}{c3420ea28f91e513e50cb7492a3757f1}
+      \strng{authorfullhashraw}{c3420ea28f91e513e50cb7492a3757f1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How to Rewrite a {{C}}++ Codebase Successfully}
+      \field{urlday}{14}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\KJ43AWAW\how_to_rewrite_a_cpp_codebase_successfully.html
+      \endverb
+      \verb{urlraw}
+      \verb https://gaultier.github.io/blog/how_to_rewrite_a_cpp_codebase_successfully.md
+      \endverb
+      \verb{url}
+      \verb https://gaultier.github.io/blog/how_to_rewrite_a_cpp_codebase_successfully.md
+      \endverb
+    \endentry
+    \entry{GoogleBenchmark2025}{software}{}{}
+      \list{organization}{1}{%
+        {Google}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A microbenchmark support library}
+      \field{day}{20}
+      \field{hour}{9}
+      \field{minute}{20}
+      \field{month}{2}
+      \field{origday}{12}
+      \field{orighour}{0}
+      \field{origminute}{10}
+      \field{origmonth}{12}
+      \field{origsecond}{48}
+      \field{origtimezone}{Z}
+      \field{origyear}{2013}
+      \field{second}{51}
+      \field{timezone}{Z}
+      \field{title}{Google/Benchmark}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{origdateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/google/benchmark
+      \endverb
+      \verb{url}
+      \verb https://github.com/google/benchmark
+      \endverb
+      \keyw{benchmark}
+    \endentry
+    \entry{heislerBheislerCriterionrs2025}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=593e0582b5a1bda435789a24881fa843}{%
+           family={Heisler},
+           familyi={H\bibinitperiod},
+           given={Brook},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{593e0582b5a1bda435789a24881fa843}
+      \strng{fullhash}{593e0582b5a1bda435789a24881fa843}
+      \strng{fullhashraw}{593e0582b5a1bda435789a24881fa843}
+      \strng{bibnamehash}{593e0582b5a1bda435789a24881fa843}
+      \strng{authorbibnamehash}{593e0582b5a1bda435789a24881fa843}
+      \strng{authornamehash}{593e0582b5a1bda435789a24881fa843}
+      \strng{authorfullhash}{593e0582b5a1bda435789a24881fa843}
+      \strng{authorfullhashraw}{593e0582b5a1bda435789a24881fa843}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Statistics-driven benchmarking library for Rust}
+      \field{day}{19}
+      \field{hour}{22}
+      \field{minute}{15}
+      \field{month}{2}
+      \field{origday}{26}
+      \field{orighour}{14}
+      \field{origminute}{14}
+      \field{origmonth}{5}
+      \field{origsecond}{22}
+      \field{origtimezone}{Z}
+      \field{origyear}{2014}
+      \field{second}{46}
+      \field{timezone}{Z}
+      \field{title}{Bheisler/Criterion.Rs}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{origdateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/bheisler/criterion.rs
+      \endverb
+      \verb{url}
+      \verb https://github.com/bheisler/criterion.rs
+      \endverb
+      \keyw{benchmark,criterion,gnuplot,rust,statistics}
+    \endentry
+    \entry{sColfrozenlIquidBenchmark2025}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=4037ba17f956e5d2b7199539a125d42a}{%
+           family={S},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4037ba17f956e5d2b7199539a125d42a}
+      \strng{fullhash}{4037ba17f956e5d2b7199539a125d42a}
+      \strng{fullhashraw}{4037ba17f956e5d2b7199539a125d42a}
+      \strng{bibnamehash}{4037ba17f956e5d2b7199539a125d42a}
+      \strng{authorbibnamehash}{4037ba17f956e5d2b7199539a125d42a}
+      \strng{authornamehash}{4037ba17f956e5d2b7199539a125d42a}
+      \strng{authorfullhash}{4037ba17f956e5d2b7199539a125d42a}
+      \strng{authorfullhashraw}{4037ba17f956e5d2b7199539a125d42a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{3}
+      \field{hour}{10}
+      \field{minute}{20}
+      \field{month}{3}
+      \field{origday}{3}
+      \field{orighour}{10}
+      \field{origminute}{20}
+      \field{origmonth}{3}
+      \field{origsecond}{52}
+      \field{origtimezone}{Z}
+      \field{origyear}{2025}
+      \field{second}{59}
+      \field{timezone}{Z}
+      \field{title}{{{ColfrozenlIquid}}/Benchmark}
+      \field{urlday}{3}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{origdateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/ColfrozenlIquid/benchmark
+      \endverb
+      \verb{url}
+      \verb https://github.com/ColfrozenlIquid/benchmark
+      \endverb
+    \endentry
+    \entry{veytsmanRewriteItRust2024}{online}{}{}
+      \name{author}{4}{}{%
+        {{hash=2f72374ff69440c580c8b33cb3534d66}{%
+           family={Veytsman},
+           familyi={V\bibinitperiod},
+           given={Willow},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6132eca3c25d43668935af3208b91a8f}{%
+           family={Zhai},
+           familyi={Z\bibinitperiod},
+           given={Shuang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b85c736722ed503c520995a243eb268d}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2479178b81698706a1a7c61bec8b1236}{%
+           family={Sefkow},
+           familyi={S\bibinitperiod},
+           given={Adam\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{d44a9e0cf16027817163712c59a5c9c4}
+      \strng{fullhash}{970acad0cdb261d65ace627a7c1e5743}
+      \strng{fullhashraw}{970acad0cdb261d65ace627a7c1e5743}
+      \strng{bibnamehash}{970acad0cdb261d65ace627a7c1e5743}
+      \strng{authorbibnamehash}{970acad0cdb261d65ace627a7c1e5743}
+      \strng{authornamehash}{d44a9e0cf16027817163712c59a5c9c4}
+      \strng{authorfullhash}{970acad0cdb261d65ace627a7c1e5743}
+      \strng{authorfullhashraw}{970acad0cdb261d65ace627a7c1e5743}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Surveys of computational science show that many scientists use languages like C and C++ in order to write code for scientific computing, especially in scenarios where performance is a key factor. In this paper, we seek to evaluate the use of Rust in such a scenario, through implementations of a physics simulation in both C++ and Rust. We also create a parallel version of our Rust code, in order to further explore performance as well as parallel code complexity. Measuring performance as program runtime, we find that Rust can offer better performance than C++, with some test cases showing as much as a 5.6\texttimes{} performance increase, and that parallel code in Rust can further improve performance while being easy to write safely. Finally, we provide some preliminary profiling to better understand the difference between the way our implementations perform.}
+      \field{day}{24}
+      \field{eprintclass}{physics}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{pubstate}{prepublished}
+      \field{shorttitle}{Rewrite It in {{Rust}}}
+      \field{title}{Rewrite It in {{Rust}}: {{A Computational Physics Case Study}}}
+      \field{urlday}{28}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2410.19146
+      \endverb
+      \verb{eprint}
+      \verb 2410.19146
+      \endverb
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\B8MHE8D7\Veytsman et al. - 2024 - Rewrite it in Rust A Computational Physics Case Study.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2410.19146
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2410.19146
+      \endverb
+      \keyw{Physics - Computational Physics}
+    \endentry
+    \entry{RayonrsRayon2025}{software}{}{}
+      \list{organization}{1}{%
+        {rayon-rs}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Rayon: A data parallelism library for Rust}
+      \field{day}{28}
+      \field{hour}{8}
+      \field{minute}{58}
+      \field{month}{2}
+      \field{origday}{2}
+      \field{orighour}{15}
+      \field{origminute}{38}
+      \field{origmonth}{10}
+      \field{origsecond}{5}
+      \field{origtimezone}{Z}
+      \field{origyear}{2014}
+      \field{second}{23}
+      \field{timezone}{Z}
+      \field{title}{Rayon-Rs/Rayon}
+      \field{urlday}{28}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{origdateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/rayon-rs/rayon
+      \endverb
+      \verb{url}
+      \verb https://github.com/rayon-rs/rayon
+      \endverb
+    \endentry
+    \entry{rotterNBodyPerformanceKDTree2022}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=20f4cc16258094e840a37d9715c75c5e}{%
+           family={Rotter},
+           familyi={R\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=708b2da0ebe8414dc35fbef8fe1307bc}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Mark\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Las Vegas, NV, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{6de03108e2caa87e99c7f73575c92b2b}
+      \strng{fullhash}{6de03108e2caa87e99c7f73575c92b2b}
+      \strng{fullhashraw}{6de03108e2caa87e99c7f73575c92b2b}
+      \strng{bibnamehash}{6de03108e2caa87e99c7f73575c92b2b}
+      \strng{authorbibnamehash}{6de03108e2caa87e99c7f73575c92b2b}
+      \strng{authornamehash}{6de03108e2caa87e99c7f73575c92b2b}
+      \strng{authorfullhash}{6de03108e2caa87e99c7f73575c92b2b}
+      \strng{authorfullhashraw}{6de03108e2caa87e99c7f73575c92b2b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper presents the results of a more representative N-body benchmark utilizing a kD-tree implemented in multiple languages. We find that while Rust is slightly slower than C or C++ for smaller simulations, it is the fastest language for simulations at the scale we use in actual research. On the other hand, Go is constantly 1.5-2x slower than Rust. The JVM is competitive with Go for intermediate-size simulations but struggles when we reach one million particles. As expected, scripting languages are the slowest, though it is rather remarkable how much slower Python is than Node.js. Also surprising is that our attempts to speed up the Python implementation using NumPy made it significantly slower.}
+      \field{booktitle}{2022 {{International Conference}} on {{Computational Science}} and {{Computational Intelligence}} ({{CSCI}})}
+      \field{eventtitle}{2022 {{International Conference}} on {{Computational Science}} and {{Computational Intelligence}} ({{CSCI}})}
+      \field{isbn}{979-8-3503-2028-2}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shorttitle}{N-{{Body Performance With}} a {{kD-Tree}}}
+      \field{title}{N-{{Body Performance With}} a {{kD-Tree}}: {{Comparing Rust}} to {{Other Languages}}}
+      \field{urlday}{28}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{457\bibrangedash 462}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/CSCI58124.2022.00088
+      \endverb
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\XT4VGDTL\Rotter and Lewis - 2022 - N-Body Performance With a kD-Tree Comparing Rust to Other Languages.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10216574/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10216574/
+      \endverb
+    \endentry
+    \entry{2022ReviewAdoption}{online}{}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The year 2022 marks seven years since the stable version of the Rust language was officially released. Since its release, Rust has been popular among developers. In a Stack Overflow poll of over 73,00}
+      \field{langid}{english}
+      \field{title}{2022 {{Review}} |{} {{The}} Adoption of {{Rust}} in {{Business}}}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\JZMBKNDE\2022-review-the-adoption-of-rust-in-business.html
+      \endverb
+      \verb{urlraw}
+      \verb https://rustmagazine.org/issue-1/2022-review-the-adoption-of-rust-in-business
+      \endverb
+      \verb{url}
+      \verb https://rustmagazine.org/issue-1/2022-review-the-adoption-of-rust-in-business
+      \endverb
+    \endentry
+    \entry{claburnMicrosoftRewritingCore}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d4e583ccd70b0df7ea203d1fc5c68b57}{%
+           family={Claburn},
+           familyi={C\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4e583ccd70b0df7ea203d1fc5c68b57}
+      \strng{fullhash}{d4e583ccd70b0df7ea203d1fc5c68b57}
+      \strng{fullhashraw}{d4e583ccd70b0df7ea203d1fc5c68b57}
+      \strng{bibnamehash}{d4e583ccd70b0df7ea203d1fc5c68b57}
+      \strng{authorbibnamehash}{d4e583ccd70b0df7ea203d1fc5c68b57}
+      \strng{authornamehash}{d4e583ccd70b0df7ea203d1fc5c68b57}
+      \strng{authorfullhash}{d4e583ccd70b0df7ea203d1fc5c68b57}
+      \strng{authorfullhashraw}{d4e583ccd70b0df7ea203d1fc5c68b57}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Now that's a C change we can back}
+      \field{langid}{english}
+      \field{title}{Microsoft Is Rewriting Core {{Windows}} Libraries in {{Rust}}}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\8QCQUQ8P\microsoft_windows_rust.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.theregister.com/2023/04/27/microsoft_windows_rust/
+      \endverb
+      \verb{url}
+      \verb https://www.theregister.com/2023/04/27/microsoft_windows_rust/
+      \endverb
+    \endentry
+    \entry{EmpiricalStudyRustforLinux2024}{online}{}{}
+      \list{organization}{1}{%
+        {USENIX}%
+      }
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{30}
+      \field{hour}{21}
+      \field{langid}{english}
+      \field{minute}{41}
+      \field{month}{6}
+      \field{second}{59}
+      \field{shorttitle}{An {{Empirical Study}} of {{Rust-for-Linux}}}
+      \field{timezone}{-07\bibtzminsep 00}
+      \field{title}{An {{Empirical Study}} of {{Rust-for-Linux}}: {{The Success}}, {{Dissatisfaction}}, and {{Compromise}}}
+      \field{urlday}{6}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\HEWK6BE3\empirical-study-rust-linux-success-dissatisfaction-and-compromise.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.usenix.org/publications/loginonline/empirical-study-rust-linux-success-dissatisfaction-and-compromise
+      \endverb
+      \verb{url}
+      \verb https://www.usenix.org/publications/loginonline/empirical-study-rust-linux-success-dissatisfaction-and-compromise
+      \endverb
+    \endentry
+    \entry{LinusTorvalds}{online}{}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{title}{Linus {{Torvalds}} on {{C}}++}
+      \field{urlday}{7}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\Daniel\Zotero\storage\L85CC6GY\linus.html
+      \endverb
+      \verb{urlraw}
+      \verb https://harmful.cat-v.org/software/c++/linus
+      \endverb
+      \verb{url}
+      \verb https://harmful.cat-v.org/software/c++/linus
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

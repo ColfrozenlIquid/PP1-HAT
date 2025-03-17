@@ -1,13 +1,13 @@
 \chapter{Background}
 \label{chap:background}
 
-Memory safety is becoming a central aspect of new developing languages as growing concern for safety and security of real world applications. Common memory safety violations that lead to unsafe utilization of memory in software development are Use-After-Free (accessing memory after it has deallocated), dangling pointers (pointers that reference freed memory) or buffer overflow/ underflow (writing past/ before allocated memory, corrupting adjacent memory) among various others. These violations are usually only detected during runtime of the program, and will often lead to critical failure of the program if not managed properly. 
+Memory safety has become a central focus in modern programming languages due to growing concerns over the security and reliability of real-world applications. Common memory safety violations include use-after-free (accessing memory after it has been deallocated), dangling pointers (references to freed memory), and buffer overflow/underflow (reading or writing beyond allocated memory, leading to corruption of adjacent data). These violations are typically detected only at runtime and, if left unhandled, can result in critical program failures.
 
-Memory safety describes the idea that we can reason about the program’s state locally. This allows us to show the correctness of the program component, by proving that all its memory accesses are confined to an exact region of memory assigned to it. Other regions can be ignored in this proof, as they should remain completely unaffected \cite[p.80]{dhurjatiMemorySafetyRuntime} \cite[p.71]{bauerPrinciplesSecurityTrust2018}.
+Memory safety describes the idea that we can reason about the program’s state locally. This allows us to show the correctness of the program component, by proving that all its memory accesses are confined to an exact region of memory assigned to it. Other regions can be ignored in this proof, as they should remain completely unaffected \cite[]{dhurjatiMemorySafetyRuntime} \cite[]{bauerPrinciplesSecurityTrust2018}.
 
 Systems programming is a subsection of software development focused on building software and software systems that provide a service to other software. These systems often have much more rigid constraints on performance, uptime and security. Memory safe approaches are as such becoming a more interesting option when designing these systems, as they provide higher performance compared to garbage collected languages, while retaining the runtime safety these provide.
 
-\section{Rust’s ownership model}
+\section{Rust’s Ownership Model}
 
 Rust replaces manual memory management with the ownership model, which is based on three fundamental rules:
 
@@ -36,7 +36,20 @@ println!("{}", s2); // `s2` is the new owner
 println!("{}", s); // ERROR: `s` no longer exists
 \end{lstlisting}
 
-Rust also allows for borrowing or references, where multiple immutable, or a single mutable reference to a value can exist at any given time. Furthermore, all references must be valid, and invalid references are caught at compile time \cite[Section 4.2]{RustBook}. Rust’s borrow checker and ownership rules avoid the need for manual memory management and as a result ensures compile time memory safety.
+Rust also allows for borrowing or references, where multiple immutable, or a single mutable reference to a value can exist at any given time. Furthermore, all references must be valid, and invalid references are caught at compile time \cite[Section 4.2]{RustBook}. Rust’s borrow checker and ownership rules avoid the need for manual memory management and as a result ensures compile time memory safety. 
+
+Rust extends this ownership model to threads with its built in Send and Sync traits. Traits in Rust are a collection of methods that define shared behavior, similar to interfaces in other languages. When doing concurrent programming using Rust's standard library concurrency abstractions like Mutex, the compiler checks that Send and Sync traits are valid and provides locking and unlocking guarantees at compile time \cite[Section 16]{RustBook}.
+
+\begin{lstlisting}[language=Rust, frame=single, caption={Thread Safety using Sync and Send Traits}, captionpos=b]
+let counter = Arc::new(Mutex::new(0)); // Safe shared state
+for _ in 0..10 {
+    let counter = Arc::clone(&counter);
+    let handle = thread::spawn(move || {
+        let mut num = counter.lock().unwrap(); //Compiler enforced locking
+        *num += 1; // Safe modification inside Mutex
+    });
+}
+\end{lstlisting}
 
 Rust introduces the concept of unsafe code blocks to handle operations that bypass the compiler’s strict safety guarantees. Rust's static analysis prioritizes rejecting potentially unsafe code over allowing unsafe behavior. Unsafe blocks enable programmers to explicitly mark sections of code that the compiler would normally flag as unsafe but that the programmer deems correct. This mechanism provides controlled access to operations that Rust does not guarantee as safe, including:
 
