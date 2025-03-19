@@ -1,5 +1,11 @@
-\chapter{Software Safety}
+\chapter{Memory Safety and Software Security}
 \label{chap:safety}
+
+We have discussed how Rust's ownership model prevents many of the pitfalls that C++'s manual memory management creates, but how does memory safety manifest itself into software safety and security. Recent trends have shown a growing interest in the move away from Memory Unsafe Languages like C/ C++ to Memory Safe Languages like Rust.
+
+\paragraph{}
+
+In an article by A. Gaynor, he argues that given a large enough codebase of millions of lines of code, at least 65\% of all security vulnerabilities will be caused by memory unsafety. He argues that large codebases built according to different development methodologies, by different companies, at different points in time all share a common problem source, being C/ C++. He cites that  Android, iOS, Chrome, Microsoft and others all have similar figures around the 70\% mark \cite[]{WhatScienceCan}.
 
 In 2024, the Office of the National Cyber Director published a report on the future of secure and measurable software, identifying memory safety violations as the most common security vulnerability. The report urges the technical community to transition toward memory-safe programming languages. It compares C++ and Rust in the context of safety in aerospace engineering and introduces the concept of "secure by design." The authors argue that while both Rust and C++ meet three key prerequisites, Rust has yet to be implemented in real-world space systems. For Rust's integration into these safety-critical environments, further advancements in development toolchains, education, and field studies are necessary \cite[]{theofficeofthewhitehouseBackBuildingBlocks2024}.
 
@@ -7,9 +13,27 @@ In 2024, the Office of the National Cyber Director published a report on the fut
 
 According to H. Sutter, \enquote{We can and do write “good” code and secure applications in C++. However, even experienced C++ developers can easily and inadvertently introduce “bad” code and security vulnerabilities—issues that C++ silently accepts, but that other languages would reject as safety violations \cite[]{sutterSafetyContext2024}.} He acknowledges Rust’s strong safety guarantees, which enforce memory and thread safety, but also points out that these constraints can limit the implementation of otherwise safe data structures, often necessitating increased use of Rust’s unsafe blocks. Sutter notes that between 30\% and 50\% of Rust crates incorporate unsafe code to some extent, compared to 25\% of Java libraries. He argues that external tools, such as sanitizers, should be standard practice in any large-scale software development lifecycle, regardless of whether a language is memory-safe \cite[]{sutterSafetyContext2024}.
 
+He argues that to meet the recommendations put forth by government organizations like NIST, NSA and CISA in their Case for Memory Safety Roadmap \cite[]{CaseMemorySafe2023}, C++ would have to address "the low-hanging fruit"~\cite[]{stroustrupFrameworkProfilesDevelopment} of type, bounds, initialization and lifetime safety. Furthermore, he claims that a 98\% improvement in the medium term is achievable when these problem areas are addressed.
+
 He also references an article by A. Gaynor \cite[]{WhatScienceCan}, which asserts that in large-scale codebases written in memory-unsafe languages like C and C++, approximately 65\% of security vulnerabilities stem from memory unsafety. However, Sutter contends that these metrics rely on CVEs (Common Vulnerabilities and Exposures), and do not necessarily reflect software safety in the context of life-critical systems \cite[]{sutterSafetyContext2024}.
 
+\section{Future of C++}
+
 Even Bjarne Stroustrup, the creator of C++, emphasizes the need for type and resource safety in his paper on Type and Resource Safe C++ \cite[]{stroustrupDesignAlternativesTypeandResource}. He argues that simply stating, \enquote{but you can write good C++ code} is insufficient and insists that \enquote{we need guarantees, preferably static, against violations}. In his framework for Profiles development \cite[]{stroustrupFrameworkProfilesDevelopment}, he outlines an approach for creating a safety profile that offers guarantees comparable to Rust. He also urges the community not to wait for a standardized solution, stating that \enquote{we can’t wait for a standard offering standardized profiles}. Instead, he advocates for a comprehensive strategy that leverages new tools and libraries to analyze—without modifying—existing source code while ensuring these safety guarantees \cite[]{stroustrupFrameworkProfilesDevelopment}.
+
+\paragraph{}
+
+In his framework for Profiles development \cite[]{stroustrupFrameworkProfilesDevelopment}, Bjarne Stroustrup argues that achieving complete type and resource safety is impossible for arbitrary C++ programs, especially those with complex pointer usage. To address this, he proposes the use of Profiles, which leverage static analysis to classify code into three categories:
+
+\begin{enumerate}[noitemsep] 
+    \item Verified safe (meeting the profile's definition of safety) 
+    \item Verified unsafe 
+    \item Verified possibly unsafe (too complex to classify) 
+\end{enumerate}
+
+He emphasizes that this classification should follow the same principle as Rust's unsafe guard—preferring to reject safe programs rather than allow erroneous ones to pass safety checks. To minimize the impact on compile times, Stroustrup advocates for keeping static analysis local and only applying it when explicitly requested through annotations.
+
+Stroustrup introduces a limited set of Profiles designed to perform static analysis or runtime checks on specific sections of code based on predefined objectives. These objectives include detecting concurrency issues and data races, identifying out-of-bounds accesses, analyzing pointer operations, and enforcing RAII principles to prevent resource leaks. Additionally, the Profiles are designed to interoperate without imposing contradictory rules \cite[]{stroustrupFrameworkProfilesDevelopment}.
 
 % \footnote{A \textbf{sanitizer} is a tool or function that detects, prevents, or mitigates security vulnerabilities or undefined behavior by analyzing and modifying input or memory access at runtime or compile-time.}
 

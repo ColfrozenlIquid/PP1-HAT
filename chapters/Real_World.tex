@@ -1,7 +1,24 @@
 \chapter{Real World Adoption \& Use-Cases}
 \label{chap:real_world}
 
-In recent years, the adoption of Rust has grown substantially within large-scale software projects and technology companies. This trend is evident both in the complete rewriting of existing infrastructures originally implemented in languages such as C++ and in the development of new components in Rust that interoperate with legacy C++ codebases. Notably, C++—along with its predecessor, C—has served as an industry stalwart since the 1990s. This paper aims to examine the modern adoption of Rust and evaluate its effectiveness as a replacement for C++ in contemporary software development.
+In recent years, the adoption of Rust has grown substantially within large-scale software projects and technology companies. This trend is evident both in the complete rewriting of existing infrastructures originally implemented in languages such as C++ and in the development of new components in Rust that interoperate with legacy C++ codebases. Notably, C++—along with its predecessor, C—has served as an industry stalwart since the 1990s.
+
+\paragraph{}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/grouped_bar_chart.pdf}
+    \caption{Adoption Trends and Proficiency in Rust according to 2024 State of Rust Survey \cite[]{2024StateRust}.}
+    \label{fig:bargraph}
+\end{figure}
+
+According to the 2024 State of Rust survey \cite[]{2024StateRust}, 63.7\% of respondents indicated that they no longer use Rust but would like to in the future if the opportunity arises. Meanwhile, 36.0\% of respondents cited external factors, such as changing goals and requirements in their professional use of Rust, as the reason for no longer using it. This marks a decrease from 45.7\% in 2023, possibly indicating that Rust is becoming more integrated into professional development settings.
+
+This trend is further supported by the continuous increase in daily or near-daily Rust usage, which grew from 47.3\% in 2022 to 49.3\% in 2023 and 53.4\% in 2024. Similarly, the percentage of participants who claim proficiency in writing production-ready Rust code has risen from 42.3\% in 2022 to 47.0\% in 2023, reaching 53.5\% in 2024. This suggests a growing number of proficient Rust developers producing usable code.
+
+The proportion of developers using Rust for the majority of their coding tasks has increased from 29.8\% in 2022 to 33.9\% in 2023 and 38.2\% in 2024, indicating a rising adoption of Rust in professional settings. This is further reinforced by the increase in organizations making non-trivial use of Rust, from 35.4\% in 2022 to 38.7\% in 2023 and 45.5\% in 2024 \cite[]{2024StateRust}.
+
+\paragraph{}
 
 Microsoft exemplifies a leading proponent of this shift. As one of the organizations with the largest codebases in C and C++ globally \cite[]{2022ReviewAdoption}, Microsoft initiated a significant transition in 2020 by rewriting its implementation of DWriteCore. This effort has yielded a hybrid codebase consisting of 152,000 lines of Rust and 96,000 lines of C++ code. Additionally, the Windows Win32 GDI is currently being ported to Rust, with 36,000 lines of Rust code integrated so far \cite[]{claburnMicrosoftRewritingCore}.
 
