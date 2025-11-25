@@ -21,7 +21,7 @@
 \begin{document}
 \frenchspacing
 \raggedbottom
-\selectlanguage{american} % ngerman, american
+\selectlanguage{ngerman} % ngerman, american
 %\renewcommand*{\bibname}{new name}
 %\setbibpreamble{}
 \pagenumbering{roman}
@@ -34,7 +34,6 @@
 % \cleardoublepage\include{frontbackmatter/Foreword}
 \cleardoublepage\include{frontbackmatter/Declaration}
 \condLOCK{\cleardoublepage\include{frontbackmatter/BlockingNotice}}
-\cleardoublepage\include{frontbackmatter/AbstractEN}
 \cleardoublepage\include{frontbackmatter/AbstractDE}
 %\cleardoublepage\include{frontbackmatter/Publications}
 %\cleardoublepage\include{frontbackmatter/Acknowledgments}
@@ -42,7 +41,7 @@
 % \cleardoublepage\include{frontbackmatter/Figures}
 % \cleardoublepage\include{frontbackmatter/Tables}
 % \cleardoublepage\include{frontbackmatter/Listings}
-\cleardoublepage\include{frontbackmatter/Acronyms}
+% \cleardoublepage\include{frontbackmatter/Acronyms}
 
 % Mainmatter
 \cleardoublepage
@@ -51,13 +50,12 @@
 \cleardoublepage
 % \part{Thesis}\label{pt:thesis}
 % \part{Thesis}
-\cleardoublepage\include{chapters/Introduction}
-\cleardoublepage\include{chapters/Background}
-\cleardoublepage\include{chapters/Safety}
-\cleardoublepage\include{chapters/Development}
-\cleardoublepage\include{chapters/Performance}
-\cleardoublepage\include{chapters/Real_World}
-\cleardoublepage\include{chapters/Conclusion}
+\cleardoublepage\include{chapters/Einleitung}
+\cleardoublepage\include{chapters/TechnischerHintergrund}
+\cleardoublepage\include{chapters/EthischePerspektiven}
+\cleardoublepage\include{chapters/Fallstudie}
+\cleardoublepage\include{chapters/Fazit}
+
 
 % Backmatter
 \appendix
