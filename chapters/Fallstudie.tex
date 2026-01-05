@@ -1,9 +1,9 @@
 \chapter{Fallstudie: Praxisprojekt „KI-Formularassistent“}
 
 \section{Projektziel und Funktionsprinzip}
-Das Praxisprojekt umfasst die Entwicklung einer Web-Applikation, die eine assistierte Formularausfüllung ermöglicht. Nutzerinnen und Nutzer können über einen KI-Assistenten ein natürliches Gespräch führen und werden dabei Schritt für Schritt beim Ausfüllen eines Versicherungsformulars begleitet. Das Formular kann sowohl manuell ausgefüllt werden als auch mithilfe des KI-Assistenten, der bei Unklarheiten unterstützt.
+Das Praxisprojekt umfasst die Entwicklung einer webbasierten Anwendung, die Nutzer beim Ausfüllen eines Versicherungsformulars unterstützt. Das System stellt zwei parallele Interaktionswege bereit. Einerseits die klassische manuelle Eingabe in ein strukturiertes Formular, andererseits die Nutzung eines eingebundenen KI-Assistenten, mit dem ein dialogorientiertes Ausfüllen ermöglicht wird. Der KI-Assistent soll Nutzer bei Unklarheiten unterstützen, fehlende Angaben erfragen und Kontextinformationen bereitstellen.
 
-Ziel des Projekts ist es, eine zugängliche (barrierefreie) und zuverlässig funktionierende Anwendung zu entwickeln. Zudem soll es als Forschungs- und Weiterentwicklungsgrundlage für die Entwicklerinnen und Entwickler des Unternehmens dienen, insbesondere im Hinblick auf den praktischen Einsatz von KI-Technologien.
+Ziel des Projekts ist es, eine barrierefreies Nutzererlebnis anzubieten. Parallel dazu dient das Projekt als interner Lern- und Forschungsraum, um Entwicklern praktische Erfahrungen und Kompetenzen im Umgang mit KI-Technologien zu vermitteln.
 
 \section{Motivation für den Einsatz von KI}
 
@@ -15,14 +15,21 @@ Diese Priorisierung wirtschaftlicher Interessen führt dazu, dass ethische Über
 
 Der Einsatz von KI ist an sich nicht intrinsisch moralisch verwerflich, dennoch sollten die ethischen Bedenken nicht verworfen werden. Wenn KI in der richtigen Weise eingesetzt wird, bildet es ein enorm leistungsstarkes Werkzeug für bestimmte Aufgabenstellungen. Dennoch sollte KI nicht als Universallösung herangezogen werden. Im Folgenden werden die konkreten technischen Lösungsansätze des Praxisprojekts analysiert und mit möglichen energieeffizienteren Alternativen verglichen.
 
-\subsection{Implementierte KI-Lösung}
-Das entwickelte System basiert auf einem Large Language Model (LLM), das über eine API-Schnittstelle (Application Programm Interface) angebunden wird.
-
 \section{Bewertung des Projekts anhand der Kriterien aus Kapitel 3}
 
-Im Folgenden wird das Praxisprojekt systematisch anhand der in Kapitel 3 entwickelten ethischen Kriterien evaluiert. Dabei werden sowohl die getroffenen technischen Entscheidungen als auch die zugrunde liegenden Motivationen kritisch hinterfragt. Die Bewertung erfolgt entlang der sieben Kriterien: Notwendigkeit, Effizienz, Transparenz, Nachhaltigkeit, Verhältnismäßigkeit, Abhängigkeiten und Werteorientierung.
+Im Folgenden wird das Praxisprojekt anhand der sieben in Kapitel 3 entwickelten Kriterien bewertet.
 
-Für jedes Kriterium wird zunächst die konkrete Projektrealität dargestellt, anschließend mit den in Abschnitt 4.3 beschriebenen Alternativen verglichen und abschließend eine ethische Einschätzung vorgenommen. Ziel ist es, transparent aufzuzeigen, an welchen Stellen das Projekt den ethischen Anforderungen gerecht wird und wo Defizite oder Zielkonflikte bestehen. Diese Analyse bildet die Grundlage für die abschließende Reflexion und die Beantwortung der Forschungsfrage.
+\begin{description}[noitemsep,topsep=5pt]
+    \item \textbf{1. Notwendigkeit}: Die Aufgabe des Systems; Unterstützung beim Ausfüllen eines standardisierten Formulars, obwohl technisch möglich, hat im Projektkontext wenig Mehrwert geliefert. Ein regelbasiertes und deterministisches System hätte diesselbe Funktion zuverlässiger erfüllt. Die Notwendigkeit des Systems ist somit nicht gegeben.
+    \item \textbf{2. Effizienz}: Der Ressourcen- und Energieverbrauch einer API-basierten LLM Implementierung ist erheblich höher als der ener alternativen Lösung. Für den Anwendungsfall mit klar definierbaren Eingaben und Prozessübergängen ist dieses nicht verhältnismäßig. Effizienz spricht deutlich gegen den Einsatz von KI in diesem Konetxt.
+    \item \textbf{3. Transparenz}: LLMs sind nur schwer nachvollziehbar. Weder der Benutzer noch der Entwickler können erklären warum das Modell bestimmte antworten liefert. Somit wird auch Kontrollierbarkeit und Validierung erschwert, welches zu Unregelmäßigkeiten und Problemen in der Benutzung führen kann. Alternative Systeme wären vollständig Erklärbar, und für diesen Anwendungskontext deutlich besser geeignet. Transparenz ist kaum gegeben. 
+    \item \textbf{4. Nachhaltigkeit}: Die ökologische Belastung durch den Einsatz von LLM-APIs ist im Vergleich zu regelbasierten Verfahren ungleich höher. Das wiederholte durchlaufen einer Interferenz mit derselben Anfrage spricht vollkommen gegen die Nachhaltigkeit. Zudem ist auch soziale Nachhaltigkeit durch Abhängigkeiten von Anbietersystemen und Kompetenzverlust im Unternehmen geschwächt. Die ökologischen Bedenken überwiegen hier klar dem eigentlichen Nutzen, welches gegen die Nachhaltigkeit spricht.
+    \item \textbf{5. Verhältnismäßigkeit}: Das Nutzen des KI-basierten Assistenten aufgrund von Komfort und Benutzerfreundlichkeit wirft Fragen in seiner Verhältnismäßigkeit auf. Einerseits bietet der Einsatz des LLM enorme Vorteile in der generierung von, und extrahierung aus natürlichem Text. Dazu kann das LLM besser auf Benutzerwünsche und Bedürfnisse eingehen. Dennoch ist der gebrauch von einem LLM für das extrahieren von validierbaren Schlüsselwörtern aus Text in keinem Verhältniss zu den ökologischen Kosten. Für den gegebenen Zweck lässt sich ein vergleichbarer Nutzen mit weniger Aufwand erzielen. 
+    \item \textbf{6. Abhängigkeit}: Durch die Nutzung einer externen Schnittstelle entsteht eine strukturelle Abhängigkeit zu API-Anbietern. Somit auch eine Abhängigkeit zu Preispolitik und Verfügbarkeit. Somit erhöhen sich die Risiken in der Skalierbarkeit, der Wartbarkeit und der Kostenkontrolle.
+    \item \textbf{7. Werteorientierung}: Der Einsatz von KI unterstüttz zwar das Ziel der Barrierefreiheit, steht aber im Konflikt mit ökologischer Verantwortung, Transparenz und technischer Nachhaltigkeit. Die Werteorientierung fällt somit ambivalent aus.
+\end{description}
+
+Insgesamt zeigt die Bewertung, dass der Einsatz von KI im vorliegenden Praxisprojekt aus ethischer Sicht nur eingeschränkt vertretbar ist. Die meisten Kriterien sprechen für einen alternativen, resourcenschonenderen Ansatz.
 
 \section{Reflexion}
 
