@@ -1,19 +1,18 @@
 \chapter{Technischer Hintergrund}
+Dieses Kapitel stellt die technischen Aspekte dar, die für die sozialwissenschaftliche Bewertung de KI-Einsatzes datenverarbeitender Systeme relevant sind. Ziel ist es, aufzuzeigen, dass der Einsatz von KI im betrachteten Anwendungskontext keine technische Notwendigkeit darstellt, sondern eine bewusste und damit ethisch rechtfertigungsbedürftige Entscheidung ist.
 
-\section{Begrifflichkeiten}
-Der Begriff \textbf{Künstliche Intelligenz (KI)} wird umgangssprachlich und in der Literatur uneinheitlich verwendet. Der Begriff umfasst sowohl symbolische (explizite Regeln und Wissen) sowie datengetriebene (statistische Methoden und neuronale Netze) Ansätze. In dieser Arbeit bezieht sich KI ausschließlich auf große mathematische Sprachmodelle, im Englischen “Large Learning Models” die anhand von Training an großen Datenmengen Sprachverarbeitung und Textgenerierung ermöglichen.
+\paragraph{}
 
-\textbf{Digitale Assistenzsysteme (DAS)} sind technische Systeme und Softwarelösungen, die Menschen bei Aufgaben unterstützen, Information bereitstellen oder Prozesse vereinfachen.
+Der Begriff der Künstlichen Intelligenz (KI) wird uneinheitlich verwendet. In dieser Arbeit bezieht er sich ausschließlich auf große datengetriebene Sprachmodelle („Large Language Models“, LLMs), wie sie in KI-basierten Assistenzsystemen eingesetzt werden. Diese Systeme zeichnen sich durch hohe Modellkomplexität, begrenzte Nachvollziehbarkeit und einen erheblichen Bedarf an Rechenressourcen aus. Gerade diese Eigenschaften machen ihren Einsatz ethisch erklärungsbedürftig, insbesondere in klar strukturierten Anwendungskontexten.
 
 \section{Ressourcenverbrauch von KI}
-Der technische Einsatz von großen modernen KI Modellen ist mit erheblichem Ressourcenverbrauch verbunden. KI Modelle durchlaufen zwei Phasen, die Trainingsphase wo große Mengen an Daten verarbeitet werden, und die Betriebsphase, wo das Modell durch Interferenz Sprache verarbeitet und generiert. Der Trainingsprozess; in der Literatur oft als „compute“ gekennzeichnet, von GPT-3 hat rund 1287 MWh konsumiert und dabei 552 Tonnen Kohlendioxid ausgestoßen. Darüber hinaus hat GPT-4 weit über 40-mal mehr Strom verbraucht, um die 52 GWh. \cite{jiSystematicReviewElectricity2026a}
+Der technische Einsatz von großen modernen KI Modellen ist mit erheblichem Ressourcen- und Energieverbrauch verbunden. Dieser entsteht sowohl in der Trainingsphase als auch im laufenden Betrieb der Modelle. Während das Training große Rechenzentren über längere Zeiträume beansprucht, verursacht die Nutzung der Modelle im Produktivbetrieb einen kontinuierlichen Energiebedarf durch Interferenzprozesse und Datenübertragung.
+
+Der Trainingsprozess dieser Modelle stellt initial den größten Energieverbrauch dar. In der Literatur wird das trainieren von OpenAI's GPT-4 auf über 50 Gigawattstunden geschätzt, das 40-fache des Vorgängermodels GPT-3 \cite{jiSystematicReviewElectricity2026a}. Jedoch macht der Produktivbetrieb der Modelle im Interferenzprozess den Grossteil des Ressourcenverbrauchs aus. Laut aktuellen Schätzwerten liegt der Energieverbrauch pro Text Anfrage zwischen 0.24 und 0.34 Wattstunden \cite{elsworthMeasuringEnvironmentalImpact2025}. Bei über 2,5 Milliarden Anfragen an Chat-GPT pro Tag sind das 850 Megawattstunden pro Tag \cite{chatterjiHowPeopleUse}.
 
 \section{Energieeffizientere Alternativen}
-Im Folgenden werden energieeffizientere Alternativen für die Datenverarbeitung in DAS vorgestellt. Bei der Entscheidung für oder gegen eine mögliche Alternative fließen sowohl Funktionalität und Komplexität als auch Skalierbarkeit, Robustheit und Sicherheit in die Analyse. Mögliche Alternative Ansätze sind wie folgt.
+Für viele datenverarbeitende Assistenzsysteme existieren technisch einfachere und deutlich energieeffizientere Alternativen, darunter regelbasierte Systeme, klassische NLP-Verfahren, Workflow-Automatisierungen und konventionelle Machine-Learning-Modelle. Diese Ansätze sind in der Regel transparenter, besser kontrollierbar und verursachen geringere ökologische Kosten. Der Einsatz großskaliger KI-Modelle ist in diesen Fällen nicht zwingend erforderlich, sondern stellt eine optionale Entscheidung dar.
 
-\begin{itemize}
-    \item Regelbasierte und deterministische Systeme
-    \item Klassische Natural Language Processing (NLP) Systeme
-    \item Workflow Automatisierung
-    \item Klassische Machine Learning Modelle (ML)
-\end{itemize}
+\paragraph{}
+
+Der Einsatz von KI in datenverarbeitenden Assistenzsystemen ist technisch nicht alternativlos. Angesichts des hohen Ressourcenverbrauchs moderner KI-Modelle und der Existenz funktional ausreichender, energieeffizienterer Alternativen ist der KI-Einsatz als bewusste und ethisch rechtfertigungsbedürftige Entscheidung zu verstehen. Auf dieser Grundlage wird im folgenden Kapitel ein ethisch-sozialwissenschaftlicher Bewertungsrahmen entwickelt.
