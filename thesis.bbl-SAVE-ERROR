@@ -1,0 +1,691 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{jiSystematicReviewElectricity2026a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=eb34afd4b70e487dd6d1d928050309af}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Zhenya},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=262e8aaf229fe30eaf29361304c42038}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ecb71135902d0a61af8d0c684a78140}
+      \strng{fullhash}{7ecb71135902d0a61af8d0c684a78140}
+      \strng{bibnamehash}{7ecb71135902d0a61af8d0c684a78140}
+      \strng{authorbibnamehash}{7ecb71135902d0a61af8d0c684a78140}
+      \strng{authornamehash}{7ecb71135902d0a61af8d0c684a78140}
+      \strng{authorfullhash}{7ecb71135902d0a61af8d0c684a78140}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Large language models (LLMs) are revolutionizing technology landscapes, transforming production workflows, and deeply embedding themselves into our daily lives. Their unparalleled capabilities, fueled by extensive training on vast datasets and intensive utilizations, underpin this transformation. However, this achievement comes at a significant cost: the immense electricity demand required for their training and inference poses an urgent and critical challenge. As the reliance on LLMs grows, ensuring a reliable and sustainable power supply becomes paramount for their uninterrupted progress and widespread adoption. This comprehensive review paper thoroughly examines the intricacies of LLMs’ lifecycle, focusing on both training and inference stages. It critically assesses various parameters and approaches for accurately estimating their electricity consumption and associated carbon emissions, drawing upon representative statistical data spanning diverse LLM products and task types. By delving into the complexities, the paper uncovers the fundamental challenges in forecasting and fulfilling LLMs’ extensive electricity demand, which are intricately linked to controversies within four bottom-up tiers: soft-and-hardware, data center, power grid, and external societal factors. Crucially, this paper offers a suite of tailored solutions for each tier, aimed at not only addressing the immediate electricity demand challenge but also fostering the long-term sustainability of LLMs. The insights outlined herein endeavor to alleviate the power shortage crisis facing LLMs, paving the way for their widespread adoption while minimizing their environmental impact and contributing to a greener future.}
+      \field{issn}{13640321}
+      \field{journaltitle}{Renewable and Sustainable Energy Reviews}
+      \field{month}{1}
+      \field{shortjournal}{Renewable and Sustainable Energy Reviews}
+      \field{shorttitle}{A {{Systematic Review}} of {{Electricity Demand}} for {{Large Language Models}}}
+      \field{title}{A {{Systematic Review}} of {{Electricity Demand}} for {{Large Language Models}}: {{Evaluations}}, {{Challenges}}, and {{Solutions}}}
+      \field{urlday}{25}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{volume}{225}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{116159}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.rser.2025.116159
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1364032125008329
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1364032125008329
+      \endverb
+    \endentry
+    \entry{elsworthMeasuringEnvironmentalImpact2025}{online}{}
+      \name{author}{12}{}{%
+        {{hash=042d0710024f223d68d080145a7d0fef}{%
+           family={Elsworth},
+           familyi={E\bibinitperiod},
+           given={Cooper},
+           giveni={C\bibinitperiod}}}%
+        {{hash=82b7443ec7e2acd016c186c452aea2cf}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Keguo},
+           giveni={K\bibinitperiod}}}%
+        {{hash=64f58317379ddd1a24e0e6cba85ae78c}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bde43245dc618727cc094c1d9ca4138d}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=abf1bd1c09f839569c437c36577e06fa}{%
+           family={Sedivy},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5809d55afb6b3f2ac032e71863cf279e}{%
+           family={Goodman},
+           familyi={G\bibinitperiod},
+           given={Savannah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=23a9635df8fc806034281aabdcb30fc9}{%
+           family={Townsend},
+           familyi={T\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d86fc34f3ab2eed537ffd62d45ef9244}{%
+           family={Ranganathan},
+           familyi={R\bibinitperiod},
+           given={Parthasarathy},
+           giveni={P\bibinitperiod}}}%
+        {{hash=62f954323339abeba6c6a240e9d2855b}{%
+           family={Dean},
+           familyi={D\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8999178b72243773300917591e511e88}{%
+           family={Vahdat},
+           familyi={V\bibinitperiod},
+           given={Amin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8885c789fc27e0e304ff94d45125b780}{%
+           family={Gomes},
+           familyi={G\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e456d570ec236cee82b8cf83a29db39f}{%
+           family={Manyika},
+           familyi={M\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9429b0f25ef7e5af87cf1256cc30e81e}
+      \strng{fullhash}{4914b4e60efa8f8b25bd9aec5561ba3b}
+      \strng{bibnamehash}{9429b0f25ef7e5af87cf1256cc30e81e}
+      \strng{authorbibnamehash}{9429b0f25ef7e5af87cf1256cc30e81e}
+      \strng{authornamehash}{9429b0f25ef7e5af87cf1256cc30e81e}
+      \strng{authorfullhash}{4914b4e60efa8f8b25bd9aec5561ba3b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The transformative power of AI is undeniable—but as user adoption accelerates, so does the need to understand and mitigate the environmental impact of AI serving. However, no studies have measured AI serving environmental metrics in a production environment. This paper addresses this gap by proposing and executing a comprehensive methodology for measuring the energy usage, carbon emissions, and water consumption of AI inference workloads in a large-scale, AI production environment. Our approach accounts for the full stack of AI serving infrastructure—including active AI accelerator power, host system energy, idle machine capacity, and data center energy overhead. Through detailed instrumentation of Google’s AI infrastructure for serving the Gemini AI assistant, we find the median Gemini Apps text prompt consumes 0.24 Wh of energy—a figure substantially lower than many public estimates. We also show that Google’s software efficiency efforts and clean energy procurement have driven a 33x reduction in energy consumption and a 44x reduction in carbon footprint for the median Gemini Apps text prompt over one year. We identify that the median Gemini Apps text prompt uses less energy than watching nine seconds of television (0.24 Wh) and consumes the equivalent of five drops of water (0.26 mL). While these impacts are low compared to other daily activities, reducing the environmental impact of AI serving continues to warrant important attention. Towards this objective, we propose that a comprehensive measurement of AI serving environmental metrics is critical for accurately comparing models, and to properly incentivize efficiency gains across the full AI serving stack.}
+      \field{day}{21}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{pubstate}{prepublished}
+      \field{title}{Measuring the Environmental Impact of Delivering {{AI}} at {{Google Scale}}}
+      \field{urlday}{5}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2508.15734
+      \endverb
+      \verb{eprint}
+      \verb 2508.15734
+      \endverb
+      \verb{file}
+      \verb C:\Users\dstoklosa\Zotero\storage\HEQPQ3MF\Elsworth et al. - 2025 - Measuring the environmental impact of delivering AI at Google Scale.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2508.15734
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2508.15734
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence}
+    \endentry
+    \entry{chatterjiHowPeopleUse}{article}{}
+      \name{author}{7}{}{%
+        {{hash=5be50f62eeb7487f0783e149c639999f}{%
+           family={Chatterji},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dafb3a8377d52ac007169ab19c6158a3}{%
+           family={Cunningham},
+           familyi={C\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2f3041724128a3c13e8fe67a8728f166}{%
+           family={Deming},
+           familyi={D\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=eeef6b15d0b94f3de1d491eb72045596}{%
+           family={Hitzig},
+           familyi={H\bibinitperiod},
+           given={Zoe},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9d264e30f978d56f6af7180cec40b650}{%
+           family={Ong},
+           familyi={O\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=df9cc320a726d357d6b9f08c22cd9bbe}{%
+           family={Shan},
+           familyi={S\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f2878b2d587860c9b58dd11a1d9c5548}{%
+           family={Wadman},
+           familyi={W\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{97baa7e0801f0ae0793268425cc28618}
+      \strng{fullhash}{165eb5a307691e2429b38ddfe02f75f7}
+      \strng{bibnamehash}{97baa7e0801f0ae0793268425cc28618}
+      \strng{authorbibnamehash}{97baa7e0801f0ae0793268425cc28618}
+      \strng{authornamehash}{97baa7e0801f0ae0793268425cc28618}
+      \strng{authorfullhash}{165eb5a307691e2429b38ddfe02f75f7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Despite the rapid adoption of LLM chatbots, little is known about how they are used. We document the growth of ChatGPT’s consumer product from its launch in November 2022 through July 2025, when it had been adopted by around 10\% of the world’s adult population. Early adopters were disproportionately male but the gender gap has narrowed dramatically, and we find higher growth rates in lower-income countries. Using a privacy-preserving automated pipeline, we classify usage patterns within a representative sample of ChatGPT conversations. We find steady growth in work-related messages but even faster growth in non-work-related messages, which have grown from 53\% to more than 70\% of all usage. Work usage is more common for educated users in highly-paid professional occupations. We classify messages by conversation topic and find that “Practical Guidance,” “Seeking Information,” and “Writing” are the three most common topics and collectively account for nearly 80\% of all conversations. Writing dominates work-related tasks, highlighting chatbots’ unique ability to generate digital outputs compared to traditional search engines. Computer programming and self-expression both represent relatively small shares of use. Overall, we find that ChatGPT provides economic value through decision support, which is especially important in knowledge-intensive jobs.}
+      \field{langid}{english}
+      \field{title}{How {{People Use ChatGPT}}}
+      \verb{file}
+      \verb C:\Users\dstoklosa\Zotero\storage\CDKFYFNR\Chatterji et al. - How People Use ChatGPT.pdf
+      \endverb
+    \endentry
+    \entry{grunwaldTechnikfolgenabschaetzungEinfuehrung2025}{book}{}
+      \name{author}{1}{}{%
+        {{hash=f46a6b762886a5f3f908dcc7eb2685fc}{%
+           family={Grunwald},
+           familyi={G\bibinitperiod},
+           given={Armin},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Baden-Baden}%
+      }
+      \list{publisher}{1}{%
+        {Nomos Verlagsgesellschaft mbH \& Co. KG}%
+      }
+      \strng{namehash}{f46a6b762886a5f3f908dcc7eb2685fc}
+      \strng{fullhash}{f46a6b762886a5f3f908dcc7eb2685fc}
+      \strng{bibnamehash}{f46a6b762886a5f3f908dcc7eb2685fc}
+      \strng{authorbibnamehash}{f46a6b762886a5f3f908dcc7eb2685fc}
+      \strng{authornamehash}{f46a6b762886a5f3f908dcc7eb2685fc}
+      \strng{authorfullhash}{f46a6b762886a5f3f908dcc7eb2685fc}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{4. Auflage}
+      \field{isbn}{978-3-7560-1595-5 978-3-7489-4514-7}
+      \field{langid}{german}
+      \field{pagetotal}{1}
+      \field{series}{NomosBibliothek}
+      \field{shorttitle}{Technikfolgenabschätzung}
+      \field{title}{Technikfolgenabschätzung: Einführung}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.5771/9783748945147
+      \endverb
+    \endentry
+    \entry{jonasPrinzipVerantwortungVersuch1990}{book}{}
+      \name{author}{1}{}{%
+        {{hash=599fe7d07ff31b8e0864ac923b1068c5}{%
+           family={Jonas},
+           familyi={J\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Frankfurt am Main}%
+      }
+      \list{publisher}{1}{%
+        {Suhrkamp}%
+      }
+      \strng{namehash}{599fe7d07ff31b8e0864ac923b1068c5}
+      \strng{fullhash}{599fe7d07ff31b8e0864ac923b1068c5}
+      \strng{bibnamehash}{599fe7d07ff31b8e0864ac923b1068c5}
+      \strng{authorbibnamehash}{599fe7d07ff31b8e0864ac923b1068c5}
+      \strng{authornamehash}{599fe7d07ff31b8e0864ac923b1068c5}
+      \strng{authorfullhash}{599fe7d07ff31b8e0864ac923b1068c5}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{[9. Aufl.]}
+      \field{isbn}{978-3-518-37585-3}
+      \field{origyear}{1990}
+      \field{pagetotal}{425 S.}
+      \field{shorttitle}{Das {{Prinzip Verantwortung}}}
+      \field{title}{Das {{Prinzip Verantwortung}} : {{Versuch}} Einer {{Ethik}} Für Die Technologische {{Zivilisation}}}
+      \field{origdateera}{ce}
+      \verb{file}
+      \verb C:\Users\dstoklosa\Zotero\storage\MRKQDHNY\HEB012593516.html
+      \endverb
+    \endentry
+    \entry{moenigEthicsDesignGrundlagen2025}{book}{}
+      \name{author}{12}{}{%
+        {{hash=9dd302ae367da248158f3dc0d14437f2}{%
+           family={Mönig},
+           familyi={M\bibinitperiod},
+           given={Julia-Maria},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=84a0e72c1e161d83caa1c7d85c1da2b0}{%
+           family={Grimm},
+           familyi={G\bibinitperiod},
+           given={Petra},
+           giveni={P\bibinitperiod}}}%
+        {{hash=31d0cb8215962f8f4634417567b691ed}{%
+           family={Bernhard},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e047ff293dc229ed75e176cded2bf498}{%
+           family={Tenbrake},
+           familyi={T\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod}}}%
+        {{hash=208fe842f4a4b8e896963a79490f5cb0}{%
+           family={Berg-Postweiler},
+           familyi={B\bibinithyphendelim P\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=667c35ece23da7583fd4dc64ab2c5fdf}{%
+           family={Bosen},
+           familyi={B\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e90485a62fb94df509a7d531c4243461}{%
+           family={Lemke},
+           familyi={L\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f37a055a888ca15fd3976fbc0d50a0e4}{%
+           family={Mirsch},
+           familyi={M\bibinitperiod},
+           given={Marie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4e7480df771054d062773d90918934ae}{%
+           family={Nolles},
+           familyi={N\bibinitperiod},
+           given={Charlotte},
+           giveni={C\bibinitperiod}}}%
+        {{hash=afc9c182460c1ab3480bbf6f23a50d6c}{%
+           family={Röhl},
+           familyi={R\bibinitperiod},
+           given={Calvin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2448112fae3440a43b616897b40e9f5a}{%
+           family={Winkens},
+           familyi={W\bibinitperiod},
+           given={Ann-Kristin},
+           giveni={A\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=2fde789227aa6d0cfcbde7b384c2c37a}{%
+           family={Leicht-Scholten},
+           familyi={L\bibinithyphendelim S\bibinitperiod},
+           given={Carmen},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Verlag Karl Alber}%
+      }
+      \strng{namehash}{ba6793c229b616c4eb506ebd1afa7a7c}
+      \strng{fullhash}{c65959bfd524023bde48b72bb159887c}
+      \strng{bibnamehash}{ba6793c229b616c4eb506ebd1afa7a7c}
+      \strng{authorbibnamehash}{ba6793c229b616c4eb506ebd1afa7a7c}
+      \strng{authornamehash}{ba6793c229b616c4eb506ebd1afa7a7c}
+      \strng{authorfullhash}{c65959bfd524023bde48b72bb159887c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Technology is never neutral. At the same time, the values behind a technology are not always transparent. As a result, the potential for harm caused by new technologies can arise. This is where ethics by design comes in: The design and development of technologies should proactively be guided by values. This DRZE expert report introduces the basics of the concept and explains the possibilities and limits of ethical technology design on the basis of practical examples from research, business and education. With contributions by Petra Grimm | Aurélie Halsband | Dirk Lanzerath | Carmen Leicht-Scholten | Julia Maria Mönig}
+      \field{isbn}{978-3-495-99022-3}
+      \field{langid}{ngerman}
+      \field{shorttitle}{Ethics by Design}
+      \field{title}{Ethics by Design: Grundlagen, Umsetzung und Grenzen ethischer Technikgestaltung}
+      \field{urlday}{2}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5771/9783495990223
+      \endverb
+      \verb{file}
+      \verb C:\Users\dstoklosa\Zotero\storage\88W7AEIW\Mönig et al. - 2025 - Ethics by Design Grundlagen, Umsetzung und Grenzen ethischer Technikgestaltung.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nomos-elibrary.de/index.php?doi=10.5771/9783495990223
+      \endverb
+      \verb{url}
+      \verb https://www.nomos-elibrary.de/index.php?doi=10.5771/9783495990223
+      \endverb
+    \endentry
+    \entry{floridiEthicsInformation2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0d57a43cc17e895c38b6d1656af4ece5}{%
+           family={Floridi},
+           familyi={F\bibinitperiod},
+           given={Luciano},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{fullhash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{bibnamehash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{authorbibnamehash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{authornamehash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \strng{authorfullhash}{0d57a43cc17e895c38b6d1656af4ece5}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-19-964132-1 978-0-19-874805-2}
+      \field{pagetotal}{357}
+      \field{title}{The {{Ethics}} of {{Information}}}
+      \field{year}{2015}
+      \field{dateera}{ce}
+    \endentry
+    \entry{EnergyAI2025}{report}{}
+      \name{author}{1}{}{%
+        {{hash=18fdbec513c87989c7580f31bb7f03ab}{%
+           given={IEA},
+           giveni={I\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \strng{namehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{fullhash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{bibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authorbibnamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authornamehash}{18fdbec513c87989c7580f31bb7f03ab}
+      \strng{authorfullhash}{18fdbec513c87989c7580f31bb7f03ab}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Energy and {{AI}}}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{pages}{304}
+      \range{pages}{1}
+      \verb{file}
+      \verb C:\Users\dstoklosa\Zotero\storage\ZL5NA7F2\EnergyandAI.pdf
+      \endverb
+      \verb{urlraw}
+      \verb www.iea.org/reports/energy-and-ai
+      \endverb
+      \verb{url}
+      \verb www.iea.org/reports/energy-and-ai
+      \endverb
+    \endentry
+    \entry{matuenyIllusionCompetenceSkill2025}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2e2120094003790332957b9d2bb504d2}{%
+           family={Matueny},
+           familyi={M\bibinitperiod},
+           given={Dr.\bibnamedelimi Ramzy\bibnamedelima Muorwel},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=823bdb6f5e69e88fc0763e079b09a6b0}{%
+           family={Nyamai},
+           familyi={N\bibinitperiod},
+           given={Dr.\bibnamedelimi Joseph\bibnamedelima Juma},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{45b2a9d6f2365569f3de11ccbec7a4ab}
+      \strng{fullhash}{45b2a9d6f2365569f3de11ccbec7a4ab}
+      \strng{bibnamehash}{45b2a9d6f2365569f3de11ccbec7a4ab}
+      \strng{authorbibnamehash}{45b2a9d6f2365569f3de11ccbec7a4ab}
+      \strng{authornamehash}{45b2a9d6f2365569f3de11ccbec7a4ab}
+      \strng{authorfullhash}{45b2a9d6f2365569f3de11ccbec7a4ab}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This conceptual review paper explores the emerging phenomenon of skill degradation in the context of increasing reliance on artificial intelligence (AI) within higher education and professional environments. As AI tools become integral to learning, writing, assessment, and decision-making processes, many users particularly students and instructors experience what has been termed the illusion of competence, a misleading perception of mastery created by AI-generated outputs that mask underlying cognitive deficits. Drawing on Cognitive Load Theory and Technological Dependency Theory, this paper examines how the offloading of intellectual effort to AI systems diminishes core human faculties such as memory retention, critical thinking, metacognitive awareness, creativity, and professional judgment. The analysis is structured across multiple dimensions, including the cognitive mechanisms of skill loss, real-world manifestations in academic and occupational settings, and the broader psychological and social consequences of overdependence. It highlights risks such as academic underperformance, reduced originality, erosion of self-efficacy, widening equity gaps, and the devaluation of human expertise. Ethical and pedagogical concerns such as fairness, transparency, data privacy, and faculty readiness are also addressed. The paper concludes with strategic recommendations for educational institutions, including the need for AI literacy training, faculty development, assessment reform, and policy frameworks that encourage responsible and critical engagement with AI technologies. Ultimately, the paper argues for a balanced, human-centered approach to AI integration, one that positions AI as a support system rather than a substitute for cognitive engagement, ensuring that technological advancement enhances rather than displaces the human capacity for deep, reflective learning.}
+      \field{day}{19}
+      \field{issn}{23212705}
+      \field{journaltitle}{International Journal of Research and Scientific Innovation}
+      \field{month}{6}
+      \field{number}{V}
+      \field{shortjournal}{IJRSI}
+      \field{title}{Illusion of {{Competence}} and {{Skill Degradation}} in {{Artificial Intelligence Dependency}} among {{Users}}}
+      \field{urlday}{6}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{volume}{XII}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1725\bibrangedash 1738}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.51244/IJRSI.2025.120500163
+      \endverb
+      \verb{urlraw}
+      \verb https://rsisinternational.org/journals/ijrsi/articles/illusion-of-competence-and-skill-degradation-in-artificial-intelligence-dependency-among-users/
+      \endverb
+      \verb{url}
+      \verb https://rsisinternational.org/journals/ijrsi/articles/illusion-of-competence-and-skill-degradation-in-artificial-intelligence-dependency-among-users/
+      \endverb
+    \endentry
+    \entry{bardzellShaowenBardzell2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7c4828b8a1622f53e6eab916275bf8ca}{%
+           family={Bardzell},
+           familyi={B\bibinitperiod},
+           given={Shaowen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c4828b8a1622f53e6eab916275bf8ca}
+      \strng{fullhash}{7c4828b8a1622f53e6eab916275bf8ca}
+      \strng{bibnamehash}{7c4828b8a1622f53e6eab916275bf8ca}
+      \strng{authorbibnamehash}{7c4828b8a1622f53e6eab916275bf8ca}
+      \strng{authornamehash}{7c4828b8a1622f53e6eab916275bf8ca}
+      \strng{authorfullhash}{7c4828b8a1622f53e6eab916275bf8ca}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The latest advances in Artificial Intelligence (AI), such as Large Language Models (LLMs), have provoked a massive expansion and adoption of AI applications across the board, with seemingly no sector left untouched by recent developments. Anywhere we look, from healthcare to the creative industries, from education to entertainment, from sustainability to knowledge work, AI is being adopted and adapted, funded and fundraised for, developed and designed for, researched and used for doing research. As AI continues to be treated as a necessary and unquestioned solution for a range of societal problems, we seek to ponder and challenge its perceived suitability and inevitability. Moreover, we wonder how we can go about resisting AI solutionism (i.e., the idea that technology provides solutions to complex social problems) and who gets to resist it, in particular if the structures that surround people and their specific positions constrain them from doing so. This workshop will focus on gathering and sharing lessons from experiences resisting, or attempting to resist, AI solutionism; taking stock and revisiting previous learnings from decades of work within and beyond HCI; and envisioning ways, perspectives, tools, and practices to orient ourselves and each other towards more pluralistic futures.}
+      \field{day}{27}
+      \field{issn}{1072-5520, 1558-3449}
+      \field{journaltitle}{Interactions}
+      \field{month}{4}
+      \field{number}{3}
+      \field{shortjournal}{interactions}
+      \field{title}{Shaowen {{Bardzell}}}
+      \field{urlday}{26}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{volume}{24}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{12\bibrangedash 13}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1145/3068259
+      \endverb
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3068259
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3068259
+      \endverb
+    \endentry
+    \entry{lindgrenIntroducingCriticalStudies2023}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=d4e08a91d7aee36849702b7c95d58ba0}{%
+           family={Lindgren},
+           familyi={L\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=d4e08a91d7aee36849702b7c95d58ba0}{%
+           family={Lindgren},
+           familyi={L\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Edward Elgar Publishing}%
+      }
+      \strng{namehash}{d4e08a91d7aee36849702b7c95d58ba0}
+      \strng{fullhash}{d4e08a91d7aee36849702b7c95d58ba0}
+      \strng{bibnamehash}{d4e08a91d7aee36849702b7c95d58ba0}
+      \strng{authorbibnamehash}{d4e08a91d7aee36849702b7c95d58ba0}
+      \strng{authornamehash}{d4e08a91d7aee36849702b7c95d58ba0}
+      \strng{authorfullhash}{d4e08a91d7aee36849702b7c95d58ba0}
+      \strng{editorbibnamehash}{d4e08a91d7aee36849702b7c95d58ba0}
+      \strng{editornamehash}{d4e08a91d7aee36849702b7c95d58ba0}
+      \strng{editorfullhash}{d4e08a91d7aee36849702b7c95d58ba0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of {{Critical Studies}} of {{Artificial Intelligence}}}
+      \field{day}{14}
+      \field{isbn}{978-1-80392-856-2 978-1-80392-855-5}
+      \field{month}{11}
+      \field{title}{Introducing {{Critical Studies}} of {{Artificial Intelligence}}}
+      \field{urlday}{26}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 19}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.4337/9781803928562.00005
+      \endverb
+      \verb{urlraw}
+      \verb https://www.elgaronline.com/view/book/9781803928562/book-part-9781803928562-5.xml
+      \endverb
+      \verb{url}
+      \verb https://www.elgaronline.com/view/book/9781803928562/book-part-9781803928562-5.xml
+      \endverb
+    \endentry
+    \entry{kasneciEuropesAIImperative2025}{online}{}
+      \name{author}{8}{}{%
+        {{hash=38a915387a57fd2fe2a67ca2c13d444f}{%
+           family={Kasneci},
+           familyi={K\bibinitperiod},
+           given={Gjergji},
+           giveni={G\bibinitperiod}}}%
+        {{hash=494d637131f50aa2a57073bf6c5f7672}{%
+           family={Gasser},
+           familyi={G\bibinitperiod},
+           given={Urs},
+           giveni={U\bibinitperiod}}}%
+        {{hash=e366c59b8b8a7ab8ff188799e506c997}{%
+           family={Hofmann},
+           familyi={H\bibinitperiod},
+           given={Thomas\bibnamedelima F.},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=f7bae6a087b5b9e69a80e9bbd566a7e7}{%
+           family={Kramer},
+           familyi={K\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=823a540da89d7aaf4404cc3d0e393f2d}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3086a9e2c4571ceec3f86633a3d43ca2}{%
+           family={Peus},
+           familyi={P\bibinitperiod},
+           given={Claudia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9b5a25ed65bce7afe3882915cbfca924}{%
+           family={Schönenberger},
+           familyi={S\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c72fad49713fef4e273c39cc783e7c68}{%
+           family={Kasneci},
+           familyi={K\bibinitperiod},
+           given={Enkelejda},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{789b2a0c38439bada75b19f56584c25a}
+      \strng{fullhash}{8f1096598ab645e97bd72e5bd6d1c10f}
+      \strng{bibnamehash}{789b2a0c38439bada75b19f56584c25a}
+      \strng{authorbibnamehash}{789b2a0c38439bada75b19f56584c25a}
+      \strng{authornamehash}{789b2a0c38439bada75b19f56584c25a}
+      \strng{authorfullhash}{8f1096598ab645e97bd72e5bd6d1c10f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Europe is at a make-or-break moment in the global AI race, squeezed between the massive venture capital and tech giants in the US and China’s scale-oriented, top-down drive. At this tipping point, where the convergence of AI with complementary and synergistic technologies, like quantum computing, biotech, VR/AR, 5G/6G, robotics, advanced materials, and high-performance computing, could upend geopolitical balances, Europe needs to rethink its AI-related strategy. On the heels of the AI Action Summit 2025 in Paris, we present a sharp, doable strategy that builds upon Europe’s strengths and closes gaps.}
+      \field{day}{13}
+      \field{month}{2}
+      \field{title}{Europe’s {{AI Imperative}} - {{A Pragmatic Blueprint}} for {{Global Tech Leadership}}}
+      \field{urlday}{26}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.31235/osf.io/8uyrc_v1
+      \endverb
+      \verb{urlraw}
+      \verb https://osf.io/8uyrc_v1
+      \endverb
+      \verb{url}
+      \verb https://osf.io/8uyrc_v1
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
