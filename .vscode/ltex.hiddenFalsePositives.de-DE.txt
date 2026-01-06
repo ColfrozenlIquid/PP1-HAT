@@ -1,0 +1,1 @@
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QIn dieser Arbeit bezieht er sich ausschließlich auf große datengetriebene Sprachmodelle („Large Language Models“, LLMs), wie sie in KI-basierten Assistenzsystemen eingesetzt werden.\\E$"}
