@@ -4,6 +4,8 @@
 \section{Projektziel und Funktionsprinzip}
 Das Praxisprojekt umfasst die Entwicklung einer webbasierten Anwendung, die Nutzer beim Ausfüllen eines Versicherungsformulars unterstützt. Das System stellt zwei parallele Interaktionswege bereit. Einerseits die klassische manuelle Eingabe in ein strukturiertes Formular, andererseits die Nutzung eines eingebundenen KI-Assistenten, mit dem ein dialogorientiertes Ausfüllen ermöglicht wird. Der KI-Assistent soll vor allem Nutzer bei Unklarheiten unterstützen, fehlende Angaben erfragen und ausfüllen, sowie Kontextinformationen bereitstellen.
 
+Das entwickelte System basiert auf einem externen LLM, welches als zentrale Logik und Prozessablaufstelle genutzt wird. Hierdurch erhält das System die Fähigkeit, natürliche Sprache zu interpretieren, kontextbezogene Rückfragen zu generieren und Nutzerantworten den entsprechenden Formularfeldern zuzuordnen.
+
 Ziel des Projekts ist es, eine barrierefreies Nutzererlebnis anzubieten und das Ausfüllen von Formularen so einfach wie möglich zu gestalten. Parallel dazu dient das Projekt als unternehmensinterner Lern- und Forschungsraum, um Entwicklern praktische Erfahrungen und Kompetenzen im Umgang mit KI-Technologien zu vermitteln.
 
 \section{Motivation für den Einsatz von KI}
@@ -16,9 +18,13 @@ Diese Priorisierung der Technologie gegenüber der Problemstellung führte dazu,
 
 \section{Vergleich technischer Lösungsansätze}
 
-Um die ethische Vertretbarkeit des KI-Einsatzes beurteilen zu können, muss geklärt werden, oder der gewählte Ansatz technisch notwendig oder begründbar ist. Das entwickelte System basiert auf einem externen LLM, welches als zentrale Logik und Prozessablaufstelle genutzt wird. Hierdurch erhält das System die Fähigkeit, natürliche Sprache zu interpretieren, kontextbezogene Rückfragen zu generieren und Nutzerantworten den entsprechenden Formularfeldern zuzuordnen.
+Die Bewertung der Notwendigkeit eines KI-Einsatzes erfordert die 
+Betrachtung technischer Alternativen. Im Bereich des nachhaltigen 
+Software Engineering haben sich etablierte Prinzipien und Praktiken 
+entwickelt, die darauf abzielen, den ökologischen Fußabdruck von 
+Softwaresystemen zu reduzieren \cite{akohatadogaToolsTechniquesTrends2024}.
 
-Für das vorliegende Anwendungsszenario aus ein strukturiertes Versicherungsformular mit definierten Feldern und vorhersehbaren Nutzeranfragen wären jedoch alternative Lösungsansätze denkbar gewesen, die energieeffizienter, transparenter und wartbarer sind:
+Für das vorliegende Anwendungsszenario aus ein strukturiertes Versicherungsformular mit definierten Feldern und vorhersehbaren Nutzeranfragen wären jedoch alternative Lösungsansätze denkbar gewesen. Die Bewertung von Softwarearchitekturen sollte technische Nachhaltigkeit (Wartbarkeit, Komplexität) und ökologische Nachhaltigkeit (Energieverbrauch) berücksichtigen \cite{ventersSustainableSoftwareEngineering2023}. Für strukturierte Formularverarbeitung sind etabliert Software-Architektur ansätzte verfügbar:
 
 \begin{description}[noitemsep,topsep=5pt]
     \item \textbf{Regelbasierter Dialog-Assistent}: Ein auf Entscheidungsbäumen und bedingter Logik basierendes System könnte vordefinierte Hilfetexte und Rückfragen zu spezifischen Formularfeldern bereitstellen. Solche Systeme arbeiten deterministisch, sind vollständig transparent in ihrer Funktionsweise und benötigen minimale Rechenressourcen. 
