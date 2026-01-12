@@ -32,8 +32,7 @@ Für das vorliegende Anwendungsszenario aus ein strukturiertes Versicherungsform
     \item \textbf{Klassische NLP-Verfahren}: Für das Verstehen und Zuordnen von Nutzerantworten hätten Verfahren wie Named Entity Recognition, regelbasiertes Pattern Matching oder einfache Klassifikationsmodelle ausgereicht. Diese kommen ohne großskalige generative Modelle aus und sind deutlich ressourcenschonender.
 \end{description}
 
-Eine quantitative Betrachtung des Energieverbrauchs verdeutlicht die Größenordnung dieser Unterschiede. Für ein typisches Formular mit zehn Feldern benötigt die LLM-basierte Lösung etwa 36 Wattstunden pro Durchlauf (bei circa 1,8 Wh pro API-Aufruf und 20 Interaktionen). Ein klassisches NLP-Verfahren würde für dieselbe Aufgabe lediglich 0,001 Wh 
-verbrauchen, ein regelbasiertes System noch weniger. Der Faktor liegt damit bei etwa 30.000 bis 180.000 \cite[vgl.][]{strubellEnergyPolicyConsiderations2019}.
+Eine quantitative Betrachtung des Energieverbrauchs verdeutlicht die Größenordnung dieser Unterschiede. Für ein typisches Formular mit zehn Feldern benötigt die LLM-basierte Lösung etwa 36 Wattstunden pro Durchlauf (bei circa 1,8 Wh pro API-Aufruf und 20 Interaktionen). Ein klassisches NLP-Verfahren würde für dieselbe Aufgabe lediglich 0,001 Wh verbrauchen, ein regelbasiertes System noch weniger. Der Faktor liegt damit bei etwa 30.000 bis 180.000 \cite[vgl.]{strubellEnergyPolicyConsiderations2019} (siehe Appendix~\ref{app:energieberechnung}).
 
 Diese Ansätze besitzen vergleichsweise eine geringere Komplexität, und erfordern wesentlich weniger Rechenressourcen. Zudem sind ihre Funktionsweisen nachvollziehbar, da diese auf Basis von Regeln, Übergängen und expliziten Zuordnungen agieren. Können somit auch explizit überprüft und dokumentiert werden, und ermöglichen eine vollständig transparente Interaktion.
 

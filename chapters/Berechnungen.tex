@@ -1,0 +1,29 @@
+\chapter{Energieverbrauchsberechnung}
+\label{app:energieberechnung}
+
+\section{Annahmen und Datengrundlage}
+
+Die Berechnung des Energieverbrauchs basiert auf folgenden Annahmen:
+
+\begin{itemize}
+    \item \textbf{LLM-basierte Lösung}: 1,82 Wh pro API-Aufruf 
+          (Durchschnittswert basierend auf \cite{strubellEnergyPolicyConsiderations2019} 
+          und aktuellen Schätzungen für mittelgroße Sprachmodelle)
+    \item \textbf{Interaktionsmuster}: 20 API-Aufrufe pro Formulardurchlauf 
+          (2 Interaktionen pro Feld: Frage generieren + Antwort verarbeiten)
+    \item \textbf{Klassisches NLP}: 20W CPU-Last für 0,021s pro Feld
+    \item \textbf{Regelbasiertes System}: 15W CPU-Last für 0,005s pro Feld
+\end{itemize}
+
+\section{Einschränkungen}
+
+Diese Berechnung dient als Größenordnungsabschätzung und unterliegt folgenden Limitationen:
+
+\begin{itemize}
+    \item Energieverbrauch von LLM-APIs ist herstellerabhängig und oft intransparent
+    \item Netzwerklatenz und Übertragungskosten sind nicht eingerechnet
+    \item Alternative Systeme könnten je nach Implementierung variieren
+    \item Die Zahlen verstehen sich als konservative Schätzungen
+\end{itemize}
+
+Trotz dieser Unsicherheiten liegt die Größenordnung des Unterschieds bei Faktor $10^3$ bis $10^5$, was die grundsätzliche Aussage zur Ineffizienz bestätigt.

@@ -6,7 +6,7 @@
 \documentclass[
     openright,titlepage,numbers=noenddot,headinclude,
     footinclude=false,cleardoublepage=empty,abstract=false,
-    BCOR=5mm,paper=a4,fontsize=11pt,twocolumn
+    BCOR=5mm,paper=a4,fontsize=10pt,twocolumn
     ngerman,american,%lockflag
 ]{scrreprt}
 
@@ -61,7 +61,8 @@
 \appendix
 %\renewcommand{\thechapter}{\alph{chapter}}
 \cleardoublepage
-% \part{Appendix}
+\part{Appendix}
+\include{chapters/Berechnungen}
 
 \cleardoublepage\include{frontbackmatter/Bibliography}
 \end{document}
